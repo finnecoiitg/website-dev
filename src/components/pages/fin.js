@@ -1,236 +1,240 @@
-import React from 'react'
-import "./fin.css"
 
-function Fin() {
-  return (
-    <div>
-       <div className="top">
-        <h1 className="fundamental">Fundamental.</h1>
-        <h1 className="analysis">Analysis.</h1>
-        <p className="intro-to-fa">Elevate your career with our certified course in fundamental analysis. Explore the depths
-            of economic, industry, and company analysis with our comprehensive resources.</p>
-            <div className="buttons">
-                <div className="button2">REGISTER NOW →</div>
-        <div className="button" onClick="document.getElementById('middle').scrollIntoView();">ACCESS MATERIAL →</div>
-        </div>
-        <div className="abt-t-crs">
-            <h1>About the course</h1>
-            <ul>
-                <li>
-                    <div className="dot"></div>Gain insight into fundamental analysis and its critical role in making
-                    informed investment decisions.
-                </li>
-                <li>
-                    <div className="dot"></div>Acquaint students with essential financial statements and ratios utilized in
-                    fundamental analysis.
-                </li>
-                <li>
-                    <div className="dot"></div>Develop the ability to assess a company's financial performance and master
-                    industry analysis and competitive dynamics.
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div className="middle" id="middle">
-        <div className="lap-image">
-            <img src="../img/ruthson-zimmerman-FVwG5OzPuzo-unsplash 1.png" alt="laptop " />
-            
-        </div>
-        <div className="image-text">
-            <h1>What is fundamental analysis?</h1>
-            <p>Fundamental analysis is an evaluative approach employed to assess the inherent worth of an asset, be it a
-                stock, bond, or commodity. Its objective is to ascertain whether the asset is overvalued or undervalued
-                in relation to its intrinsic value. Through an examination of the fundamental factors influencing the
-                asset value, investors gain the ability to make well-informed decisions.</p>
-        </div>
-    </div>
-    <div className="bottom">
-        <div className="m-y-m">
-            <h1>Meet your mentors</h1>
-            <div className="cards">
-                <div className="row1">
-                    <div className="c1">
-                        <div className="image1">
-                            <img src="../img/2.png" alt="shashwat" />
-                        </div>
-                        <div className="text1">
-                            <p className="name">Shashwat Pandey</p>
-                            <p className="designation">Designation</p>
-                            <div className="linkedin">Linkedin ↗</div>
-                        </div>
-                    </div>
-                    <div className="c1">
-                        <div className="image1">
-                            <img src="../img/Khushi Tongia.png" alt="khushi" />
-                        </div>
-                        <div className="text1">
-                            <p className="name">Khushi Tongia</p>
-                            <p className="designation">Designation</p>
-                            <div className="linkedin">Linkedin ↗</div>
-                        </div>
-                    </div>
-                    <div className="c1">
-                        <div className="image1">
-                            <img src="../img/4.png" alt="himank" />
-                        </div>
-                        <div className="text1">
-                            <p className="name">Himank Pandey</p>
-                            <p className="designation">Designation</p>
-                            <div className="linkedin">Linkedin ↗</div>
-                        </div>
-                    </div>
-                    <div className="c1">
-                        <div className="image1">
-                            <img src="../img/20230327_205832-fotor-bg-remover-20230327221158.png" alt="utkarsh" />
-                        </div>
-                        <div className="text1">
-                            <p className="name">Utkarsh Utpal</p>
-                            <p className="designation">Designation</p>
-                            <div className="linkedin">Linkedin ↗</div>
-                        </div>
-                    </div>
-                </div>
-                <div className="row1">
-                    <div className="c1">
-                        <div className="image1">
-                            <img src="../img/IMG_20230328_204811_024.png" alt="Shreyanshi" />
-                        </div>
-                        <div className="text1">
-                            <p className="name">Shreyanshi</p>
-                            <p className="designation">Designation</p>
-                            <div className="linkedin">Linkedin ↗</div>
-                        </div>
-                    </div>
-                    <div className="c1">
-                        <div className="image1">
-                            <img src="../img/IMG_0299.png" alt="tanmay" />
-                        </div>
-                        <div className="text1">
-                            <p className="name">Tanmay Bhatnagar</p>
-                            <p className="designation">Designation</p>
-                            <div className="linkedin">Linkedin ↗</div>
-                        </div>
-                    </div>
-                    <div className="c1">
-                        <div className="image1">
-                            <img src="../img\IMG-20230329-WA0018.png" alt="ishan" />
-                        </div>
-                        <div className="text1">
-                            <p className="name">Ishan Agashe</p>
-                            <p className="designation">Designation</p>
-                            <div className="linkedin">Linkedin ↗</div>
-                        </div>
-                    </div>
-                    <div className="c1">
-                        <div className="image1">
-                            <img src="../img/har.png" alt="harsh"  />
-                        </div>
-                        <div className="text1">
-                            <p className="name">Harsh Katare</p>
-                            <p className="designation">Designation</p>
-                            <div className="linkedin">Linkedin ↗</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div className="m-y-m2">
-            <h1>Meet your mentors</h1>
-            <div className="cards2">
-                <div className="row2">
-                    <div className="col2">
-                        <div className="image2">
-                            <img src="../img/2.png" alt="shashwat" />
-                        </div>
-                        <div className="text2">
-                            <p className="name2">Shashwat Pandey</p>
-                            <p className="designation2">Designation</p>
-                            <div className="linkedin2">Linkedin ↗</div>
-                        </div>
-                    </div>
-                    <div className="col2">
-                        <div className="image2">
-                            <img src="../img/Khushi Tongia.png" alt="khushi" />
-                        </div>
-                        <div className="text2">
-                            <p className="name2">Khushi Tongia</p>
-                            <p className="designation2">Designation</p>
-                            <div className="linkedin2">Linkedin ↗</div>
-                        </div>
-                    </div>
-                </div>
-                <div className="row2">
-                    <div className="col2">
-                        <div className="image2">
-                            <img src="../img/4.png" alt="himank" />
-                        </div>
-                        <div className="text2">
-                            <p className="name2">Himank Pandey</p>
-                            <p className="designation2">Designation</p>
-                            <div className="linkedin2">Linkedin ↗</div>
-                        </div>
-                    </div>
-                    <div className="col2">
-                        <div className="image2">
-                            <img src="../img/20230327_205832-fotor-bg-remover-20230327221158.png" alt="utkarsh" />
-                        </div>
-                        <div className="text2">
-                            <p className="name2">Utkarsh Utpal</p>
-                            <p className="designation2">Designation</p>
-                            <div className="linkedin2">Linkedin ↗</div>
-                        </div>
-                    </div>
-                </div>
-                <div className="row2">
-                    <div className="col2">
-                        <div className="image2">
-                            <img src="../img/IMG_20230328_204811_024.png" alt="Shreyanshi" />
-                        </div>
-                        <div className="text2">
-                            <p className="name2">Shreyanshi</p>
-                            <p className="designation2">Designation</p>
-                            <div className="linkedin2">Linkedin ↗</div>
-                        </div>
-                    </div>
-                    <div className="col2">
-                        <div className="image2">
-                            <img src="../img/IMG_0299.png" alt="tanmay" />
-                        </div>
-                        <div className="text2">
-                            <p className="name2">Tanmay Bhatnagar</p>
-                            <p className="designation2">Designation</p>
-                            <div className="linkedin2">Linkedin ↗</div>
-                        </div>
-                    </div>
-                </div>
-                <div className="row2">
-                    <div className="col2">
-                        <div className="image2">
-                            <img src="../img/IMG-20230329-WA0018.png" alt="ishan" />
-                        </div>
-                        <div className="text2">
-                            <p className="name2">Ishan Agashe</p>
-                            <p className="designation2">Designation</p>
-                            <div className="linkedin2">Linkedin ↗</div>
-                        </div>
-                    </div>
-                    <div className="col2">
-                        <div className="image2">
-                            <img src="../img/har.png" alt="harsh"  />
-                        </div>
-                        <div className="text2">
-                            <p className="name2">Harsh Katare</p>
-                            <p className="designation2">Designation</p>
-                            <div class="linkedin2">Linkedin ↗</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-  )
-}
-
-export default Fin;
++ function($) {
+    'use strict';
+  
+    var Carousel = function(element, options) {
+      this.$element = $(element)
+      this.$indicators = this.$element.find('.carousel-indicators')
+      this.options = options
+      this.paused =
+        this.sliding =
+        this.interval =
+        this.$active =
+        this.$items = null
+  
+      this.options.pause == 'hover' && this.$element
+        .on('mouseenter', $.proxy(this.pause, this))
+        .on('mouseleave', $.proxy(this.cycle, this))
+    }
+  
+    Carousel.DEFAULTS = {
+      pause: 'hover',
+      wrap: true
+    }
+  
+    Carousel.prototype.cycle = function(e) {
+      e || (this.paused = false)
+  
+      this.interval && clearInterval(this.interval)
+  
+      this.options.interval && !this.paused && (this.interval = setInterval($.proxy(this.next, this), this.options.interval))
+  
+      return this
+    }
+  
+    Carousel.prototype.getActiveIndex = function() {
+      this.$active = this.$element.find('.item.active')
+      this.$items = this.$active.parent().children()
+  
+      return this.$items.index(this.$active)
+    }
+  
+    Carousel.prototype.to = function(pos) {
+      var that = this
+      var activeIndex = this.getActiveIndex()
+  
+      if (pos > (this.$items.length - 1) || pos < 0) return
+  
+      if (this.sliding) return this.$element.one('slid.bs.carousel', function() {
+        that.to(pos)
+      })
+      if (activeIndex == pos) return this.pause().cycle()
+  
+      return this.slide(pos > activeIndex ? 'next' : 'prev', $(this.$items[pos]))
+    }
+  
+    Carousel.prototype.pause = function(e) {
+      e || (this.paused = true)
+  
+      if (this.$element.find('.next, .prev').length && $.support.transition) {
+        this.$element.trigger($.support.transition.end)
+        this.cycle(true)
+      }
+  
+      this.interval = clearInterval(this.interval)
+  
+      return this
+    }
+  
+    Carousel.prototype.next = function() {
+      if (this.sliding) return
+      return this.slide('next')
+    }
+  
+    Carousel.prototype.prev = function() {
+      if (this.sliding) return
+      return this.slide('prev')
+    }
+  
+    Carousel.prototype.slide = function(type, next) {
+      var $active = this.$element.find('.item.active')
+      var $next = next || $active[type]()
+      var isCycling = this.interval
+      var direction = type == 'next' ? 'left' : 'right'
+      var fallback = type == 'next' ? 'first' : 'last'
+      var that = this
+  
+      if (!$next.length) {
+        if (!this.options.wrap) return
+        $next = this.$element.find('.item')[fallback]()
+      }
+  
+      if ($next.hasClass('active')) return this.sliding = false
+  
+      var e = $.Event('slide.bs.carousel', {
+        relatedTarget: $next[0],
+        direction: direction
+      })
+      this.$element.trigger(e)
+      if (e.isDefaultPrevented()) return
+  
+      this.sliding = true
+  
+      isCycling && this.pause()
+  
+      if (this.$indicators.length) {
+        this.$indicators.find('.active').removeClass('active')
+        this.$element.one('slid.bs.carousel', function() {
+          var $nextIndicator = $(that.$indicators.children()[that.getActiveIndex()])
+          $nextIndicator && $nextIndicator.addClass('active')
+        })
+      }
+  
+      if ($.support.transition && this.$element.hasClass('slide')) {
+        $next.addClass(type)
+        $next[0].offsetWidth // force reflow
+        $active.addClass(direction)
+        $next.addClass(direction)
+        $active
+          .one($.support.transition.end, function() {
+            $next.removeClass([type, direction].join(' ')).addClass('active')
+            $active.removeClass(['active', direction].join(' '))
+            that.sliding = false
+            setTimeout(function() {
+              that.$element.trigger('slid.bs.carousel')
+            }, 0)
+          })
+          .emulateTransitionEnd($active.css('transition-duration').slice(0, -1) * 1000)
+      } else {
+        $active.removeClass('active')
+        $next.addClass('active')
+        this.sliding = false
+        this.$element.trigger('slid.bs.carousel')
+      }
+  
+      isCycling && this.cycle()
+  
+      return this
+    }
+  
+    var old = $.fn.carousel
+  
+    $.fn.carousel = function(option) {
+      return this.each(function() {
+        var $this = $(this)
+        var data = $this.data('bs.carousel')
+        var options = $.extend({}, Carousel.DEFAULTS, $this.data(), typeof option == 'object' && option)
+        var action = typeof option == 'string' ? option : options.slide
+  
+        if (!data) $this.data('bs.carousel', (data = new Carousel(this, options)))
+        if (typeof option == 'number') data.to(option)
+        else if (action) data[action]()
+        else if (options.interval) data.pause().cycle()
+      })
+    }
+  
+    $.fn.carousel.Constructor = Carousel
+  
+  
+    $.fn.carousel.noConflict = function() {
+      $.fn.carousel = old
+      return this
+    }
+  
+  
+    $(document).on('click.bs.carousel.data-api', '[data-slide], [data-slide-to]', function(e) {
+      var $this = $(this),
+        href
+      var $target = $($this.attr('data-target') || (href = $this.attr('href')) && href.replace(/.*(?=#[^\s]+$)/, '')) //strip for ie7
+      var options = $.extend({}, $target.data(), $this.data())
+      var slideIndex = $this.attr('data-slide-to')
+      if (slideIndex) options.interval = false
+  
+      $target.carousel(options)
+  
+      if (slideIndex = $this.attr('data-slide-to')) {
+        $target.data('bs.carousel').to(slideIndex)
+      }
+  
+      e.preventDefault()
+    })
+  
+    $(window).on('load', function() {
+      $('[data-ride="carousel"]').each(function() {
+        var $carousel = $(this)
+        $carousel.carousel($carousel.data())
+      })
+    })
+  
+  }(jQuery);
+  
+  
+  + function($) {
+    'use strict';
+  
+    function transitionEnd() {
+      var el = document.createElement('bootstrap')
+  
+      var transEndEventNames = {
+        'WebkitTransition': 'webkitTransitionEnd',
+        'MozTransition': 'transitionend',
+        'OTransition': 'oTransitionEnd otransitionend',
+        'transition': 'transitionend'
+      }
+  
+      for (var name in transEndEventNames) {
+        if (el.style[name] !== undefined) {
+          return {
+            end: transEndEventNames[name]
+          }
+        }
+      }
+  
+      return false
+    }
+  
+    $.fn.emulateTransitionEnd = function(duration) {
+      var called = false,
+        $el = this
+      $(this).one($.support.transition.end, function() {
+        called = true
+      })
+      var callback = function() {
+        if (!called) $($el).trigger($.support.transition.end)
+      }
+      setTimeout(callback, duration)
+      return this
+    }
+  
+    $(function() {
+      $.support.transition = transitionEnd()
+    })
+  
+  }(jQuery);
+  
+  $(document).ready(function() {
+    $('#quote-carousel').carousel({
+      pause: true,
+    });
+  });
+  

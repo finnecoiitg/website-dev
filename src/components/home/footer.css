@@ -10,6 +10,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.body{
+
+    margin-bottom: 80px;
+}
+
 html {
     font-size: 62.5%;
 }
