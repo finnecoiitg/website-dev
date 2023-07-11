@@ -1,90 +1,97 @@
-#motto{
-    left: 203px;
-    top: 666px;
-    color: black;
-    font-size: 10.584px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 16.934px;
-    letter-spacing: 1.058px;
-    text-transform: uppercase;
-    position: absolute;
-    text-align: center;
+body{
+    font-family: sans-serif;
 }
-#stat{
-    left: 203px;
-    position: absolute;
-    top: 723px;
-    color: black;
-    font-size: 21.168px;
-    font-family: formular;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 27.518px;
-    align-self: stretch;
-    text-align: center;
+.hii{
+    width: 86.5vw;
+    height: 32.76vw;
+    background-color: #004A3C;
+    border-radius: 1.11vw 3.88vw;
+    display: flex;
+    margin: auto;
+    padding: 0vw 5.36vw;
+    gap: 7vw;
+    padding-top:5.5vw;
+    color: #7AFFA1;
+    padding-bottom: 5vw ;
+    margin-bottom:4024px ;
 }
-#container{
-    height: 373.07266px;
-    width: 100%;
-    top: 803.53px;
-    left: 199.74px;
-    border: solid black 1px;  
-    position: absolute; 
-    justify-content: center;
-    text-align: center;
-    gap: 50px;
-    min-width: auto;
-    max-height: fit-content;
-    min-height: fit-content;
-    border-left-color: white;
-    border-right-color: white;
+.rick-roll{
+    width: 38.88vw;
+    height: 21.875vw;
 }
-.row{
-    gap: 20px;
-}
-.bootstrap{
-    text-align: center;
-    width: 118px;
-    height: 52px;
-    position: relative;
-    top: 50%;
-    left: -33px;
-    border: solid white 0px;
-    letter-spacing: 0px;
-}
-#data{
-    position: relative;
-    top: 20%;
-    color: black;
-    text-align: center;
-    font-family: inter;
-    font-size: 46.872px;
+.network{
+    font-family: sans-serif;
+    font-size: 3.255vw;
     font-style: normal;
     font-weight: 400;
-    line-height: 30.559px;
-    letter-spacing: -0.937px;
+    width: 34.94vw;
 }
-#data, span{
-    position: relative;
-    top: 20%;
-    color: black;
-    display: inline-block;
-    font-size: 46.872px;
-    font-weight: 400;
-    font-style: normal;
-    font-family: inter;
-    line-height: 30.559px;
-    letter-spacing: -0.937px;
+.exciting{
+    font-size: 1.255vw;
+    padding-bottom: 2.8vw;
+    margin-top: 1vw;
+    width: 21.38vw;
+    color: #7AFFA1;
+    line-height: 2.5vw;
 }
-#value_holders{
-    position: relative;
-    top: 30%;
-    color: #454745;
-    text-align: center;
-    font-family: inter;
-    font-size: 11.146px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 19.354px;
+.button3{
+    background-color: #7AFFA1;
+    background-repeat: no-repeat;
+    border: solid #7AFFA1 0.139vw;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    width: 16.6vw;
+    height: 0.902vw;
+    border-radius: .52vw;
+    color: #004A3C;
+    padding: 0.9vw 2vw 1vw 0.93vw ;
+    font-size: 1vw;
+    text-decoration: none;
+}
+.button3:hover{
+    border-color: #7AFFA1;
+    background-color: #004A3C;
+    color: #7AFFA1;
+}
+@media (max-width: 768px){
+    .hii{
+        flex-direction: column;
+        width: 82vw;
+        height: 160.76vw;
+        padding: 10vw 4vw;
+        border-radius: 4vw 10vw;
+        position: relative;
+        margin-bottom: 5630px;
+    }
+    .rick-roll{
+        width: 75.71vw;
+    height: 44.35vw;
+    
+    }
+    .network{
+        font-family: sans-serif;
+        font-size: 12vw;
+        font-style: normal;
+        font-weight: 400;
+        width: 78.978vw;
+    }
+    .exciting{
+        font-size: 4.64vw;
+        padding-top: 7vw;
+        padding-bottom: 14.8vw;
+        width: 79.106vw;
+        line-height: 8vw;
+    }
+    .button3{
+        border-radius: 1.92vw;
+        cursor: pointer;
+        overflow: hidden;
+        outline: none;
+        width: 38.83vw;
+        height: 5.32vw;
+        color: #004A3C;
+        padding: 3.32vw 3vw 3vw 3.43vw ;
+        font-size: 3.4vw;
+    }
 }

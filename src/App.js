@@ -11,10 +11,10 @@ function App() {
   return (
     <>
     {/* <Navbar/> */}
-    {/* <Odometer/> */}
+    <Odometer/>
+    <Footer/>
     {/* <Teams/> */}
     {/* <Contactus/>  */}
-    <Footer/>
     {/* <Fin/> */}
   
     </>
