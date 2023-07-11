@@ -1,0 +1,524 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .top{
+      background-image: url(../img/Slice\ 1.png);
+      height: 77vw;
+      background-size:100% ;
+      background-repeat: no-repeat;
+  }
+  .fundamental{
+     font-size: 6.315vw;
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: normal;
+     position: absolute;
+     top:3.8vw;
+     left:23vw;
+  }
+  .analysis{
+      position: absolute;
+      font-size: 6.315vw;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: normal;
+      position: absolute;
+      top:12vw;
+      left:54vw;
+  }
+  .intro-to-fa{
+      font-size: 1.47vw;
+      width: 26.96vw;
+      
+      font-weight: normal;
+      position: absolute;
+      top:30.625vw;
+      left:54vw;
+  }
+  .buttons{
+      display: flex;
+      position: absolute;
+      top:41.85vw;
+      left:54vw; 
+      gap:1vw;
+  }
+  .button{
+      background-color: transparent;
+      background-repeat: no-repeat;
+      border: solid #004A3C 0.139vw;
+      cursor: pointer;
+      overflow: hidden;
+      outline: none;
+      width: 10.6vw;
+      height: 0.902vw;
+      border-radius: .52vw;
+      color: #004A3C;
+      padding: 0.9vw 0vw 1vw 0.93vw ;
+      font-size: 0.9vw;
+  }
+  .button2{
+      background-color: #004A3C;
+      background-repeat: no-repeat;
+      border: solid #004A3C 0.139vw;
+      cursor: pointer;
+      overflow: hidden;
+      outline: none;
+      width: 10.6vw;
+      height: 0.902vw;
+      border-radius: .52vw;
+      color: #7AFFA1;
+      padding: 0.9vw 0vw 1vw 0.93vw ;
+      font-size: 0.9vw;
+  }
+  .button:hover{
+      border-color: #B0FFC2;
+      background-color: #B0FFC2;
+  }
+  .button2:hover{
+      border-color: #7AFFA1;
+      background-color: #7AFFA1;
+      color: #004A3C;
+  }
+  .abt-t-crs{
+      height: 16.04vw ;
+      width: 71.8vw;
+      border-radius: 1.10vw 3.819vw;
+      background-color: #004A3C;
+      padding: 2.3vw 7.23vw 0.9vw 7.43vw;
+      position: absolute;
+      top: 54.78vw;
+      left: 6.74vw ;
+      display: flex;
+      color: #7AFFA1;
+      flex-wrap: wrap;
+  }
+  .abt-t-crs h1{
+      display: inline-block;
+      font-weight: normal;
+      font-size: 3.25vw;
+      margin: 0vw;
+      
+  }
+  .abt-t-crs ul{
+      display: flex;
+      gap: 1.43vw;
+      list-style-type: none;
+      font-size: 1.215vw;
+      padding-left: 0;
+  }
+  .abt-t-crs .dot{
+      width: 0.902vw;
+      height: 0.902vw;
+      border-radius: 0.451vw;
+      background-color: #7AFFA1;
+      margin-bottom: 0.625vw;
+  }
+  .middle{
+      height: 22.36vw;
+      background-color: #F5F5F5;
+      display: flex;
+      padding: 6.46vw 9.86vw 7.3vw 14.166vw;
+      gap: 7.5vw;
+  }
+  .lap-image img{
+      height: 22.36vw;
+      width: 33.40vw;
+      border-radius: 1vw;
+  }
+  .image-text{
+      width: 39.375vw;
+      
+  }
+  .image-text h1{
+      font-size: 3.22vw;
+      margin-top: 0;
+      margin-bottom: 4.02vw;
+  }
+  .image-text p{
+      font-size: 1.215vw;
+      color: #52525B;
+  }
+  .bottom{
+      background-image: url(../img/Slice\ 11.png);
+      height: 198.81vw;
+      background-size:100% ;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+  }
+  .m-y-m{
+      width: 71.8vw;
+      height: 49vw;
+      background-color: #004A3C;
+      border-radius: 1vw;
+      margin: auto;
+      top: 70.347vw ;
+      display: flex;
+      flex-direction: column;
+      padding: 4.58vw 7.36vw;
+  }
+  .m-y-m h1{
+      color: #7AFFA1;
+      font-size: 3.255vw;
+      font-weight: normal;
+  }
+  .cards{
+      display: flex;
+      height: 41.04vw;
+      /* background-color: #7AFFA1; */
+      flex-direction: column;
+      justify-content: space-between;
+  }
+  .cards .row1{
+      width: 71.8vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+  }
+  .cards .c1{
+      height: 19.375vw;
+      width: 16.7vw;
+      background-color: white;
+      border-radius: 1vw;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 1px ;
+  }
+  .c1 .image1{
+      width: inherit;
+      height: 54%;
+  }
+  .c1 .image1 img{
+      width: inherit;
+      height: 100%;
+      border-radius: 1vw 1vw 0 0;
+  }
+  .c1 .text1{
+      height: 46%;
+      /* background-color: white; */
+      display: flex;
+      flex-direction: column;
+      padding: 1.66vw 1.04vw;
+      row-gap: 0.8vw;
+  }
+  .c1 .text1 .name{
+      font-size: 1.47vw;
+      margin: 0;
+  }
+  .c1 .text1 .designation{
+      font-size: 0.884vw;
+      margin: 0;
+  }
+  .c1 .text1 .linkedin{
+      width: fit-content;
+      padding: 0.1vw 0.41vw;
+      color: #004A3C;
+      font-size: 0.607vw;
+      border-radius: 31.83px;
+      border: 0.3px solid #004A3C;
+  }
+  html{
+      scroll-behavior: smooth;
+  }
+  .m-y-m2{
+      display: none;
+  }
+  .image1{
+    background-color: beige;
+  }
+  .image2{
+    background-color: beige;
+  }
+  
+  @media (max-width: 600px){
+  body{
+      width: 100vw;
+  }
+      .top{
+          background-image: url(../img/hi.png);
+          height: 430vw;
+          width: inherit;
+      }
+      .fundamental{
+          font-size: 15vw;
+          top: 97.7vw;
+          left: 2.82vw;
+      }
+      .analysis{
+          font-size: 60.093px;
+          top:115vw;
+          left: 2.82vw;
+      }
+      .intro-to-fa{
+          font-size: 5.42vw;
+          width: 91.8vw;
+          font-weight: normal;
+          position: absolute;
+          top:143.33vw;
+          left:4.1vw;
+      }
+  
+      .button:hover{
+          border-color: #B0FFC2;
+          background-color: #B0FFC2;
+      }
+  
+  
+      .buttons{
+          display: flex;
+          position: absolute;
+          left:4.1vw; 
+          gap:5vw;
+          top:194.6vw;
+      }
+      .button{
+          width: 38.83vw;
+          height: 5.32vw;
+          border-radius: 1.92vw;
+          color: #004A3C;
+          padding: 3.32vw 0vw 3.69vw 3.43vw ;
+          font-size: 3.4vw;
+      }
+      .button2{
+          border-radius: 1.92vw;
+          cursor: pointer;
+          overflow: hidden;
+          outline: none;
+          width: 38.83vw;
+          height: 5.32vw;
+          color: #7AFFA1;
+          padding: 3.32vw 0vw 3.69vw 3.43vw ;
+          font-size: 3.4vw;
+      }
+      .button:hover{
+          border-color: #B0FFC2;
+          background-color: #B0FFC2;
+      }
+      .button2:hover{
+          border-color: #7AFFA1;
+          background-color: #7AFFA1;
+          color: #004A3C;
+      }
+  
+  
+      .abt-t-crs{
+          height: 142.3vw ;
+          width: 81.38vw;
+          border-radius: 4.06vw 14.01vw;
+          background-color: #004A3C;
+          padding: 8.2vw 3vw 11vw 6.41vw;
+          position: absolute;
+          top: 234.13vw;
+          left: 3.8vw ;
+          display: flex;
+          color: #7AFFA1;
+          flex-wrap: wrap;
+      }
+      .abt-t-crs h1{
+          display: inline-block;
+          font-weight: normal;
+          font-size: 12.07vw;
+          margin: 0vw;
+          
+      }
+      .abt-t-crs ul{
+          line-height: 6.28vw;
+          display: flex;
+          gap: 1.43vw;
+          list-style-type: none;
+          font-size: 4.57vw;
+          padding-left: 0;
+          flex-wrap: wrap;
+      }
+      .abt-t-crs .dot{
+          width: 3.328vw;
+          height: 3.328vw;
+          border-radius: 1.66vw;
+          background-color: #7AFFA1;
+          margin-bottom: 0.625vw;
+      }
+      .middle{
+          height: 224.1vw;
+          background-color: #F5F5F5;
+          display: flex;
+          flex-wrap: wrap;
+          padding: 15.1vw 4.1vw 16.15vw 5.38vw;
+          gap: 27.69vw;
+      }
+      .lap-image img{
+          height: 82.56vw;
+          width: 90.77vw;
+          border-radius: 3.69vw;
+      }
+      .image-text{
+          width: 90.77vw;
+          
+      }
+      .image-text h1{
+          font-size: 12.017vw;
+          margin-top: 0;
+          margin-bottom: 14.87vw;
+      }
+      .image-text p{
+          font-size: 4.49vw;
+      }
+      .bottom{
+          background-image: none;
+          height: 198.81vw;
+          background-size:100% ;
+          background-repeat: no-repeat;
+          display: flex;
+          flex-direction: column;
+      }
+      .m-y-m{
+          width: 71.8vw;
+          height: 49vw;
+          background-color: #004A3C;
+          border-radius: 1vw;
+          margin: auto;
+          top: 70.347vw ;
+          display: none;
+          flex-direction: column;
+          padding: 4.58vw 7.36vw;
+      }
+      .m-y-m h1{
+          color: #7AFFA1;
+          font-size: 3.255vw;
+          font-weight: normal;
+      }
+      .cards{
+          display: flex;
+          height: 41.04vw;
+          /* background-color: #7AFFA1; */
+          flex-direction: column;
+          justify-content: space-between;
+      }
+      .cards .row1{
+          width: 71.8vw;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+      }
+      .cards .c1{
+          height: 19.375vw;
+          width: 16.7vw;
+          background-color: white;
+          border-radius: 1vw;
+          display: flex;
+          flex-direction: column;
+          padding-bottom: 1px ;
+      }
+      .c1 .image1{
+          width: inherit;
+          height: 54%;
+      }
+      .c1 .image1 img{
+          width: inherit;
+          height: 100%;
+          border-radius: 1vw 1vw 0 0;
+      }
+      .c1 .text1{
+          height: 46%;
+          /* background-color: white; */
+          display: flex;
+          flex-direction: column;
+          padding: 1.66vw 1.04vw;
+          row-gap: 0.8vw;
+      }
+      .c1 .text1 .name{
+          font-size: 1.47vw;
+          margin: 0;
+      }
+      .c1 .text1 .designation{
+          font-size: 0.884vw;
+          margin: 0;
+      }
+      .c1 .text1 .linkedin{
+          width: fit-content;
+          padding: 0.1vw 0.41vw;
+          color: #004A3C;
+          font-size: 0.607vw;
+          border-radius: 31.83px;
+          border: 0.3px solid #004A3C;
+      }
+  
+      .m-y-m2{
+          background-color: #004A3C;
+          height: 397.69vw;
+          position: absolute;
+          top: 1040.77vw;
+          width: inherit;
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: column;
+          padding: 15.64vw 4.10vw 22.25vw;
+          gap: 5px;
+      }
+      .m-y-m2 h1{
+          color: #7AFFA1;
+          font-size: 12.018vw;
+          font-weight: normal;
+      }
+      .m-y-m2 .cards2{
+          display: flex;
+          flex-direction: column;
+          width: inherit;
+          height: 321.28vw;
+          justify-content: space-between;
+      }
+      .row2{
+          height: 77.65vw;
+          width: inherit;
+          display: flex;
+          justify-content: space-between;
+          flex-direction: row;
+  
+      }
+      .col2{
+          display: flex;
+          height: inherit;
+          width: 44.8717vw;
+          background-color: white;
+          border-radius: 3vw;
+          flex-direction: column;
+          gap: 0;
+      }
+      .col2 .image2 {
+          flex-grow: 0.5;
+      }
+      .col2 .image2 img{
+          width: 44.817vw;
+          flex-grow: 0.5;
+          height: 38vw;
+          border-radius: 3vw 3vw 0 0;
+      }
+  
+      .col2 .text2{
+          background-color: none;
+          flex-grow: 1;
+          height: 38.65vw;
+          /* line-height: 6.15vw; */
+          padding-left: 5px;
+      }
+      .text2 .name2{
+          font-size: 5.52vw;
+      }
+      .designation2{
+          color: rgba(0, 0, 0, 0.45);
+      }
+      .linkedin2{
+          font-size: 2.24vw;
+          height: 2.82vw;
+          color: #004A3C;
+          width: fit-content;
+          padding: 0.84vw 1.63vw 0.66vw ;
+          border: 0.3px solid #004A3C;
+          border-radius: 8.16vw;
+      }
+  
+      
+  
+      html{
+          scroll-behavior: smooth;
+      }
+  }
+  

@@ -1,0 +1,177 @@
+
+
+@import url('http://fonts.cdnfonts.com/css/masked-hero-demo');
+@import url('http://fonts.cdnfonts.com/css/palanquin');
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+.vl2 {
+    border-left: 0.5px solid #3DA46E;
+    height: 250px;
+    
+    opacity: 0.6;
+    top: 14%;
+}
+.space{
+    position: relative;
+    left: 120px;
+}
+
+i {
+    font-size: 2.4rem;
+}
+.footer {
+    padding-block: 5rem;
+    background-color:  #004A3C;
+    color: #666873;
+    position: absolute;
+    bottom: 0px;
+    height: 52rem;
+    width: 100vw;
+}
+.footer__container {
+    max-width: 116rem;
+    margin: auto;
+    padding: 0 1.5rem;
+}
+
+.footer__top {
+    display: grid;
+    grid-template-columns: 
+    repeat(auto-fit, minmax(20rem, 1fr));
+    row-gap: 2rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+.icon{
+    font-size:10px;
+}
+.footer__title {
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+#spe{
+    color: #7AFFA1;
+}
+.footer__list-item {
+    list-style: none;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    text-transform: uppercase;
+}
+.footer__list-link {
+    text-decoration: none;
+    color: inherit;
+    transition: color .25s;
+}
+.footer__list-link:hover {
+    color: #fff;
+}
+
+.company__info {
+    grid-column: 1/-1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-right: 5rem;
+}
+.company__logo {
+    color: #fff;
+    text-transform: uppercase;
+    display: flex;
+    align-items: flex-end;
+}
+.company__info ul {
+    flex-direction: row;
+}
+.copyright {
+    margin-top: auto;
+    color: #fff;
+    text-transform: uppercase;
+    padding-top: 40px;
+    position: absolute;
+    bottom: 20px !important;
+    left: 42%;
+    font-size: 10px;
+    margin-top: 320px;
+}
+
+.company__description{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 10px;
+    line-height: 15px;
+}
+.desc{
+    font-size: 10px;
+    line-height: 15px;
+    color: #fff;
+}
+@media screen and (min-width: 40em) {
+    .company__info {
+        grid-column: span 2;
+        
+    }
+}
+@media screen and (min-width: 40em) {
+   .item2{
+    display: none;
+   }  
+}
+
+@media screen and (max-width: 40em) {
+    .copyright {
+        align-items: center;
+        left: 23%;
+    }
+    .vl2 {
+        display:none;
+    }
+    .footer {
+        height: fit-content;
+    }
+    .imm{
+        display: none;
+    }
+    .itemss{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stret
+    }
+    .icon{
+        padding-left: 70px;
+    }
+    .footer__top{
+        margin-left: 0px;
+    }
+    .textt{ 
+        padding-left: 10px;
+    }
+    .company__info{
+        padding-right: 0rem; 
+        padding-bottom: 20px;
+    }
+}
+@media screen and (max-width: 1136px){
+    .space{
+        display: none;
+    }
+}
