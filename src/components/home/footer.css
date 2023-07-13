@@ -32,10 +32,10 @@ i {
     padding-block: 5rem;
     background-color:  #004A3C;
     color: #666873;
-    position: absolute;
-    bottom: 0px;
-    height: 52rem;
-    width: 100vw;
+    z-index: 1;
+    height: 40rem;
+    width: 100%;
+    margin-bottom: 0;
 }
 .footer__container {
     max-width: 116rem;
