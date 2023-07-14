@@ -13,7 +13,7 @@ function App() {
     {/* <Navbar/> */}
     {/* <Odometer/> */}
     {/* <Teams/> */}
-    {/* <Contactus/>  */}
+    <Contactus/> 
     <Footer/>
     {/* <Fin/> */}
   
