@@ -12,10 +12,7 @@ function App() {
     <>
     {/* <Navbar/> */}
     {/* <Odometer/> */}
-    <Fin/>
-    <Footer/>
-    {/* <Teams/> */}
-    {/* <Contactus/>  */}
+
   
     </>
   );
