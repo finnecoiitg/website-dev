@@ -1,0 +1,137 @@
+.card-aks { 
+    margin: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    text-align: left;
+    border-radius: 10px;
+}
+.carousel-status{
+  display: none;
+}
+.carousel-container{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    background-color: #004A3C;
+    height: 44vw;
+}
+.carousel-title{
+  width: 100%;
+  text-align: left;
+  margin-bottom: 3.8vw;
+  margin-left: 20vw;
+}
+.carousel-root{
+    display: flex;
+    justify-content: center;
+    overflow: visible;
+}
+  .testimonial-img{
+    height: 11.67vw;
+    width: 100%;
+  }
+  .card-text{
+    margin: 1.2vw;
+  }
+  .card-text p{
+    font-family: Formular-regular;
+  }
+  .carousel-button{
+    background-color: #B0FFC2;
+    height: 2.9vw;
+    border: 0;
+    color: #004A3C;
+    text-align: center;
+    font-family: Formular-regular;
+    font-size: 0.7vw;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1vw;
+  }
+  .carousel-button:hover{
+    cursor: pointer;
+  }
+
+.control-arrow{
+  position: absolute;
+  top: 50%;
+  width: 100px;
+  height: 100px;
+}
+.carousel.carousel-slider .control-arrow{
+  top: 40%;
+  color: #B0FFC2;
+  border: 3px solid;
+  border-radius: 50%;
+  overflow: visible;
+  height: 3.6vw;
+  width: 3.6vw;
+}
+.carousel .control-prev.control-arrow{
+  position: absolute;
+  left: -6vw;
+  z-index: 50;
+  overflow: visible;
+}
+.carousel.carousel-slider{
+  overflow: visible;
+}
+.carousel .control-next.control-arrow{
+  right: -6vw;
+}
+.carousel .control-next.control-arrow:before .control-prev.control-arrow:before{
+  border-left: 12px solid #B0FFC2;
+}
+.carousel-title{
+  color: #7AFFA1;
+  font-size: 3vw;
+  font-size: Formular-regular;
+}
+.carousel-aks{
+  width: 62vw;
+}
+.card-text-title{
+  font-size: 1.4vw;
+  color: #004A3C;
+  
+}
+.card-text-para{
+  font-size: 0.85vw;
+  color: rgba(0, 74, 60, 0.45);
+}
+@media only screen and (max-width: 767px){
+  .carousel-aks{
+    overflow-x: scroll;
+    width: 80vw;
+  }
+  .carousel-button{
+    font-size: 2vw;
+  }
+  .carousel-title{
+    font-size:6vw;
+  }
+  .carousel-container{
+    height: auto;
+  }
+  .card-text{
+    font-size: auto;
+  }
+  .card-text-title{
+    font-size: 5.4vw;
+    margin: 0;
+  }
+  .card-text-para{
+    font-size: 2.5vw;
+  }
+  .carousel-button{
+    color: #004A3C;
+        width: 100%;
+        border-radius: 1vw;
+        font-size: 2.2vw;
+        height: 7vw;
+  }
+}
+  

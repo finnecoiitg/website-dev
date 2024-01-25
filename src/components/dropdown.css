@@ -1,0 +1,153 @@
+.dropdown-list{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 6.5vw;
+    margin-right: 6.5vw;
+    z-index: 50;
+}
+.dropdown-title{
+    width: 100%;
+    text-align: left;
+    margin-left: 7.5vw;
+    color: black;
+    font-family:Formular-regular;
+    font-size: 3.3vw;
+    margin-bottom: 4.4vw;
+}
+select{
+    width: 10.5vw;
+    background-color: 'white';
+    border: '0.95px solid #004A3C';
+    color: '#004A3C';
+    width: '12vw'
+}
+.dropdown-cards-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns with equal width */
+    grid-gap: 2vw 3vw; /* Gap between rows and columns */
+    width: 65vw;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.card{
+    width: 29vw;
+    font-family: Formular-regular;
+    border: 1px solid #004A3C;
+    margin-right: 1.6vw;
+    margin-bottom: 2vw;
+    border-radius: 10px;
+}
+.card-title,.card-description,.card-date{
+    width: 100%;
+    text-align: left;
+}
+.testimonial-img{
+    width: 100%;
+    height: auto;
+}
+.dropdown-select{
+    display: flex;
+    margin-bottom: 3.3vw;
+    width: 100%;
+    justify-content: left;
+    margin-left: 22vw;
+}
+select{
+    height: 3.5vw;
+    border-radius: 8px;
+    border: 1px solid rgba(81, 132, 122, 0.45);
+    background: #FFF;
+    padding: 1vw;
+    color: #266559;
+    font-family: Formular;
+    font-size: 1.1vw;
+}
+.page-buttons{
+    display: flex;
+
+}
+.page-buttons button{
+    margin: 1vw;
+    background-color: white;
+    width:3vw;
+    height: 3vw;
+    font-size: 0.85vw;
+}
+.dropdown-button{
+    background-color: #B0FFC2;
+    border: 0 solid #004A3C;
+    color: #004A3C;
+    width: 12vw;
+    padding: 1vw;
+    border-radius: 0.5vw;
+    font-size: 0.8vw;
+}
+.card-date-flex{
+    display: flex;
+}
+.card-title{
+    font-size: 1.4vw;
+    color: #004A3C;
+}
+.card-description{
+    font-size: 0.85vw;
+    color: rgba(0, 74, 60, 0.45);
+}
+.card-date{
+    font-size: 0.85vw;
+    color: rgba(0, 74, 60, 0.45);
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width: 767px){
+    .dropdown-cards-container{
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+    }
+    .dropdown-title{
+        margin-left: 3.5vw;
+        width: auto;
+        font-size: 10vw;
+    }
+    select{
+        width: 20vw;
+        border-radius: 1vw;
+        font-size: 2.2vw;
+        height: 7vw;
+        background-color: white;
+        border: 0.95px solid #004A3C;
+        color: #004A3C;
+    }
+    .dropdown-select{
+        margin-left: 9vw;
+    }
+    .card{
+        width: auto;
+    }
+    .card-title{
+        font-size: 5.4vw;
+    }
+    .card-description{
+        font-size: 3.2vw;
+    }
+    .card-date{
+        font-size: 2.7vw;
+    }
+    .dropdown-button{
+        color: #004A3C;
+        width: 20vw;
+        border-radius: 1vw;
+        font-size: 2.2vw;
+        height: 7vw;
+        background-color: #B0FFC2;
+        padding: 1vw;
+        border: 0 solid #004A3C;
+    }
+}

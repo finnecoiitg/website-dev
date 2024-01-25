@@ -1,0 +1,71 @@
+.below-carousel{
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    margin-bottom: 8vw;
+    margin-top: 8vw;
+  }
+
+  .part-1-aks{
+    display: flex;
+    flex-direction: column;
+    margin-right: 2vw;
+    text-align: left;
+    font-family: Formular;
+    width: 35vw;
+  }
+  .part-1-aks-para1{
+    font-size: 1.4vw;
+    width: 21.38vw;
+    /* margin-bottom: 0; */
+  }
+  .bottom-button{
+    border: 0.95px solid #004A3C;
+    background-color:white;
+    height: 2.9vw;
+    color: #004A3C;
+    text-align: center;
+    font-family: Formular-regular;
+    font-size: 0.7vw;
+    width: 12vw;
+    border-radius: 0.5vw;
+  }
+.part-1-aks-para2{
+  margin-top: 0;
+  font-size: 3.2vw;
+  margin-bottom: 2vw;
+}
+@media (max-width: 600px) {
+  .below-carousel{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .bottom-img{
+    display: none;
+  }
+  .part-1-aks-para1{
+    font-size: 5.6vw;
+    width: auto;
+    /* margin-bottom: 0; */
+  }
+  .part-1-aks{
+    width: auto;
+    padding-left: 10vw;
+  }
+  .part-1-aks-para2{
+    font-size: 9vw;
+    /* margin-bottom: 1vw; */
+  }
+  .bottom-button{
+    border-radius: 0.5vw;
+
+        color: #004A3C;
+        width: 33vw;
+        border-radius: 1vw;
+        font-size: 2.2vw;
+        height: 7vw;
+        background-color: white;
+        padding: 1vw;
+  }
+}
