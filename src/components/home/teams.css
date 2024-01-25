@@ -1,7 +1,3 @@
-.fecsecy{
-    margin-bottom: 0px;
-
-}
 .wrapper{
     max-height: auto;
     display: flex;
@@ -15,16 +11,17 @@
 .wrapper .item{
     min-width: 300px;
     width: 343px;
-    line-height: 110px;
     text-align: left;
     margin-right: 2px;
     display: flex;
     flex-direction: column;
-
     padding: 1vw 1vw 0.5vw 1vw;
 }
 .hey{
     border-right: 0.5px solid #3DA46E;
+}
+.hey > p{
+    height: fit-content;
 }
 .item > p{
     color: #454745;
@@ -36,7 +33,6 @@
     text-align: left;
     padding: 0 10px 0 10px;
 }
-
 .main{
     margin-left: 4%;
     margin-right: 4%;
@@ -54,16 +50,15 @@
     margin-left: 14%;
     margin-right: 14%;
     justify-items: space-between;
-    flex-wrap: nowrap;
-    
+    flex-wrap: nowrap;   
 }
-        .title-aks{
-        display: flex;
-        width: 100%;
-        justify-content: flex-start;
-        margin-bottom: 0px;   
-        margin-left: 20px; 
-        }
+.title-aks{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    margin-bottom: 0px;   
+    margin-left: 20px;     
+}
 .akshaya{
     display: flex;
     width: 100%;
@@ -71,7 +66,8 @@
     justify-content: center;
     justify-items: center;
     align-items: center;
-    flex-wrap: wrap; /* flex nowrap krke media query daaldo */
+    flex-wrap: nowrap; /* flex nowrap krke media query daaldo */
+    
 }
 .card{
     display: flex;
@@ -90,14 +86,15 @@
 }
     .card-title{
         display: flex;
-        margin: 30px;
-        transition: border-bottom 0.6s ease ;
+        margin: 0 30px 30px 30px;
+        transition: border-bottom 1s ease ;
     }
     .card-body-aks{
         display: flex;
         height: 338px;
         width: 330px;
-        overflow: hidden;
+        justify-content: left;
+        align-items: start;
     }
                     .piggy-aks{
                         position: absolute;
@@ -117,27 +114,16 @@
                         border: 1.221px solid #004A3C;
                         position: absolute;
                         left: 30px;
-                        bottom: 20px;
+                        bottom: 24px;
+                        color: #004A3C;
+                        font-size: 20px;
+                        text-align: center;
+                        padding-bottom: 3px;   
                     }
                     .card-text-aks{
                         display: none;
                         transition: transform 0.6s ease;
-                    }
-                    .card:hover > .card-title{
-                        border-bottom: 1px solid #ABABAB;
-                    }
-                    .card .card-title{
-                        transition: border-bottom 1s;
-                    }
-                    .card:hover > .arrow-circle-aks{
-                        background-color: #004A3C;
-                    }
-                    .card .arrow-circle-aks{
-                        transition: background-color 0.11s;
-                    }
-                    .card:hover>.card-body-aks .card-text-aks{
-                        transform: translateY(15px);
-                        display: block;
+                        text-align: left;
                         color: #454745;
                         font-size: 14.733px;
                         font-family: 'Inter', sans-serif, 'Formular';
@@ -145,9 +131,30 @@
                         font-weight: 400;
                         line-height: 20.372px;
                         width: 282px;
-                        text-align: center;
-                        margin: 0px 24px 0px 24px;
-                        
+                        margin: 0px 24px 0px 36px;
+                    }                   
+                    .card:hover > .card-title{
+                        border-bottom: 1px solid #ABABAB;
+                    }
+                    .card:hover > .card-body-aks .card-text-aks{
+                        display: block !important;
+                        text-align: left;
+                        color: #454745;
+                        font-size: 14.733px;
+                        font-family: 'Inter', sans-serif, 'Formular';
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 20.372px;
+                        width: 282px;
+                        text-align: left;
+                        margin: 0px 24px 0px 36px;
+                    }
+                    .card:hover > .arrow-circle-aks{
+                        background-color: #004A3C;
+                        color: #7AFFA1;
+                    }
+                    .card .arrow-circle-aks{
+                        transition: background-color 0.11s;
                     }
                     .card:hover .piggy-aks{
                         transform: translate(90px, 150px);      
@@ -159,34 +166,16 @@
                     }
                     .arrow-aks {   
                         transition: 0.3s;
+                    }                
+                    p{color: #000;
+                        font-size: 31.752px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 38.102px;
+                        letter-spacing: -0.635px;
+                        font-family: 'Inter', sans-serif;
+                        text-align:left;
                     }
-                    
-                    .card:hover .arrow-aks {
-                        opacity: 0;
-                    }
-                    
-                    .card:hover .arrow-aks.arrow-aks1 {
-                        opacity: 1;
-                    }
-                      
-                    .card-text-aks {
-                        transform: translateY(-100%);
-                        transition: transform 0.3s;
-                    }
-                    
-                    .card:hover .card-text-aks {
-                        transform: translateY(50);
-                    }
-                  
-p{color: #000;
-    font-size: 31.752px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 38.102px;
-    letter-spacing: -0.635px;
-    font-family: 'Inter', sans-serif;
-    text-align:left;
-}
 .india > .title-aks > p {
     color: #0E0F0C;
     font-size: 46.872px;
@@ -196,59 +185,19 @@ p{color: #000;
     line-height: 51.559px;
     letter-spacing: -0.937px;
 }
-
-
-
-
-
-
-  
-
-  
-
-  
-
-.aks-grid-container{
-    display: grid;
-    grid-template-columns: 343px 343px 343px;
-    grid-template-rows: auto;
-    overflow-x: scroll;
-    margin-top: 3%;
-    padding-left: 3vw;
-
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    margin-top: 3%;
-    padding-left: 3vw;
-    scroll-behavior: smooth;
-
-}
-.aks-grid-item1,.aks-grid-item2,.aks-grid-item3{
-    color: #454745;
-    font-size: 16px;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 27px;
-    text-align: center;
-    padding: 0 10px 0 10px;
-}
-.aks-grid-item4,.aks-grid-item5,.aks-grid-item6{
-   padding-top: 12px;
+.aks-grid-item4{
     display: flex;
 }
 .pic-aks{
     border-radius: 50%;
     height: 40px;
-    width: 40px;
-    border: 0.1px solid;
     margin-right: 10px;
     margin-left: 8px;
     overflow: hidden;
 }
 .pic-aks img{
     object-fit: cover;
+    padding-bottom: 10px;
 }
 .post-aks{
 color: #626866;
@@ -262,18 +211,28 @@ line-height: 24px;
     display: flex;
     flex-direction: column;
 }
-
-.aks-grid-container{
-    max-height: auto;
-    border: 1px solid #ddd;
-    display: flex;
-    flex-direction: column;
-    overflow-x: auto;
+  @media (max-width: 768px) {
+    .akshaya {
+      flex-direction: column;
+    }
+    
+    .akshaya > .card {
+      flex-basis: 100%; /* Take up full width in mobile view */
+    }
+  }
+.info-aks > h4{
+    margin-top: 0;
+    margin-bottom: 8px;
 }
-.aks-grid-container::-webkit-scrollbar{
-    width: 0;
+.post-aks{
+    margin-top: 0;
 }
-.aks-grid-container .aks-grid-item{
-    min-width: 300px;
-    border-right: 0.5px solid #3DA46E;
+.commentor-aks{
+    font-size: 14px;
+    margin-bottom: 0px;
+    line-height: 25px;
+    margin-top: 0;
+}
+.bhai{
+    margin-bottom: 40rem;
 }
