@@ -1,12 +1,13 @@
 body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-  }
-  .top{
-      background-image: url(../img/Slice\ 1.png);
-      height: 77vw;
-      background-size:100% ;
-      background-repeat: no-repeat;
+}
+.top{
+    background-image: url(../img/Slice\ 8.png);
+    height: 77vw;
+    background-size:100% ;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
   }
   .fundamental{
      font-size: 6.315vw;
@@ -27,8 +28,8 @@ body{
   }
   .intro-to-fa{
       font-size: 1.47vw;
-      width: 26.96vw;
-      
+      width: 25.96vw;
+      line-height: 2vw;
       font-weight: normal;
       position: absolute;
       top:30.625vw;
@@ -48,12 +49,14 @@ body{
       cursor: pointer;
       overflow: hidden;
       outline: none;
-      width: 10.6vw;
-      height: 0.902vw;
+      width: 12.6vw;
+      height: 2.902vw;
       border-radius: .52vw;
       color: #004A3C;
-      padding: 0.9vw 0vw 1vw 0.93vw ;
+      padding: 0.8vw 0vw 1.2vw 0.93vw ;
       font-size: 0.9vw;
+      text-decoration: none;
+
   }
   .button2{
       background-color: #004A3C;
@@ -62,11 +65,11 @@ body{
       cursor: pointer;
       overflow: hidden;
       outline: none;
-      width: 10.6vw;
-      height: 0.902vw;
+      width: 12.6vw;
+      height: 2.902vw;
       border-radius: .52vw;
       color: #7AFFA1;
-      padding: 0.9vw 0vw 1vw 0.93vw ;
+      padding: 0.8vw 0vw 1.2vw 0.93vw ;
       font-size: 0.9vw;
   }
   .button:hover{
@@ -86,10 +89,16 @@ body{
       padding: 2.3vw 7.23vw 0.9vw 7.43vw;
       position: absolute;
       top: 54.78vw;
-      left: 6.74vw ;
       display: flex;
       color: #7AFFA1;
       flex-wrap: wrap;
+      margin: auto;
+      
+  }
+  .abt-crs{
+    display: flex;
+    justify-content: center;
+    margin: auto;
   }
   .abt-t-crs h1{
       display: inline-block;
@@ -113,7 +122,7 @@ body{
       margin-bottom: 0.625vw;
   }
   .middle{
-      height: 22.36vw;
+      height: 34.36vw;
       background-color: #F5F5F5;
       display: flex;
       padding: 6.46vw 9.86vw 7.3vw 14.166vw;
@@ -136,6 +145,7 @@ body{
   .image-text p{
       font-size: 1.215vw;
       color: #52525B;
+      line-height: 1.8vw;
   }
   .bottom{
       background-image: url(../img/Slice\ 11.png);
@@ -146,12 +156,13 @@ body{
       flex-direction: column;
   }
   .m-y-m{
-      width: 71.8vw;
-      height: 49vw;
+      width: 87.8vw;
+      height: 55vw;
       background-color: #004A3C;
       border-radius: 1vw;
       margin: auto;
       top: 70.347vw ;
+      gap:1vw;
       display: flex;
       flex-direction: column;
       padding: 4.58vw 7.36vw;
@@ -167,6 +178,7 @@ body{
       /* background-color: #7AFFA1; */
       flex-direction: column;
       justify-content: space-between;
+      gap: 1vw;
   }
   .cards .row1{
       width: 71.8vw;
@@ -197,16 +209,17 @@ body{
       /* background-color: white; */
       display: flex;
       flex-direction: column;
-      padding: 1.66vw 1.04vw;
-      row-gap: 0.8vw;
+      padding: 0vw 1.04vw;
   }
   .c1 .text1 .name{
       font-size: 1.47vw;
-      margin: 0;
+      margin: 0 0;
+      height: 2.5vw;
   }
   .c1 .text1 .designation{
       font-size: 0.884vw;
       margin: 0;
+    height: 4vw;
   }
   .c1 .text1 .linkedin{
       width: fit-content;
@@ -222,14 +235,24 @@ body{
   .m-y-m2{
       display: none;
   }
-  .image1{
-    background-color: beige;
+  .bg-col{
+      background-color: beige;
   }
-  .image2{
-    background-color: beige;
+  a{
+      text-decoration: none;
   }
-  
+  .linkedin:hover{
+      border-color: #B0FFC2;
+      background-color: #B0FFC2;
+  }
+  .linkedin2:hover{
+      border-color: #B0FFC2;
+      background-color: #B0FFC2;
+  }
   @media (max-width: 600px){
+    .fin{
+        margin-bottom: 1644px;
+    }
   body{
       width: 100vw;
   }
@@ -240,12 +263,12 @@ body{
       }
       .fundamental{
           font-size: 15vw;
-          top: 97.7vw;
+          top: 105.7vw;
           left: 2.82vw;
       }
       .analysis{
           font-size: 60.093px;
-          top:115vw;
+          top:120vw;
           left: 2.82vw;
       }
       .intro-to-fa{
@@ -255,6 +278,7 @@ body{
           position: absolute;
           top:143.33vw;
           left:4.1vw;
+          line-height: 7.05vw;
       }
   
       .button:hover{
@@ -271,11 +295,11 @@ body{
           top:194.6vw;
       }
       .button{
-          width: 38.83vw;
-          height: 5.32vw;
+          width: 40.83vw;
+          height: 11.32vw;
           border-radius: 1.92vw;
           color: #004A3C;
-          padding: 3.32vw 0vw 3.69vw 3.43vw ;
+          padding: 4.32vw 0vw 3.69vw 3.43vw ;
           font-size: 3.4vw;
       }
       .button2{
@@ -283,10 +307,10 @@ body{
           cursor: pointer;
           overflow: hidden;
           outline: none;
-          width: 38.83vw;
-          height: 5.32vw;
+          width: 40.83vw;
+          height: 11.32vw;
           color: #7AFFA1;
-          padding: 3.32vw 0vw 3.69vw 3.43vw ;
+          padding: 4.32vw 0vw 3.69vw 3.43vw ;
           font-size: 3.4vw;
       }
       .button:hover{
@@ -301,7 +325,7 @@ body{
   
   
       .abt-t-crs{
-          height: 142.3vw ;
+          height: 160.3vw ;
           width: 81.38vw;
           border-radius: 4.06vw 14.01vw;
           background-color: #004A3C;
@@ -312,6 +336,8 @@ body{
           display: flex;
           color: #7AFFA1;
           flex-wrap: wrap;
+          line-height: 12vw;
+          gap: 10vw;
       }
       .abt-t-crs h1{
           display: inline-block;
@@ -323,11 +349,12 @@ body{
       .abt-t-crs ul{
           line-height: 6.28vw;
           display: flex;
-          gap: 1.43vw;
+          gap: 10.43vw;
           list-style-type: none;
           font-size: 4.57vw;
           padding-left: 0;
           flex-wrap: wrap;
+          line-height: 7vw;
       }
       .abt-t-crs .dot{
           width: 3.328vw;
@@ -337,7 +364,7 @@ body{
           margin-bottom: 0.625vw;
       }
       .middle{
-          height: 224.1vw;
+          height: 280.1vw;
           background-color: #F5F5F5;
           display: flex;
           flex-wrap: wrap;
@@ -360,14 +387,17 @@ body{
       }
       .image-text p{
           font-size: 4.49vw;
+          line-height: 8vw;
       }
       .bottom{
           background-image: none;
-          height: 198.81vw;
+          height: 400.81vw;
           background-size:100% ;
           background-repeat: no-repeat;
           display: flex;
           flex-direction: column;
+          margin-top: 354.35vw;
+          margin-bottom: 220.5vw;
       }
       .m-y-m{
           width: 71.8vw;
@@ -444,14 +474,13 @@ body{
       .m-y-m2{
           background-color: #004A3C;
           height: 397.69vw;
-          position: absolute;
-          top: 1040.77vw;
+        /* margin-top: 352.82vw; */
           width: inherit;
           display: flex;
           flex-wrap: wrap;
           flex-direction: column;
           padding: 15.64vw 4.10vw 22.25vw;
-          gap: 5px;
+          gap: 1.2vw;
       }
       .m-y-m2 h1{
           color: #7AFFA1;
@@ -470,13 +499,13 @@ body{
           width: inherit;
           display: flex;
           justify-content: space-between;
+          gap: 1.5vw;
           flex-direction: row;
-  
       }
       .col2{
           display: flex;
-          height: inherit;
-          width: 44.8717vw;
+          height: 73vw;
+          width: 42.5vw;
           background-color: white;
           border-radius: 3vw;
           flex-direction: column;
@@ -486,9 +515,9 @@ body{
           flex-grow: 0.5;
       }
       .col2 .image2 img{
-          width: 44.817vw;
+          width: 42.5vw;
           flex-grow: 0.5;
-          height: 38vw;
+          height: 32vw;
           border-radius: 3vw 3vw 0 0;
       }
   
@@ -501,12 +530,16 @@ body{
       }
       .text2 .name2{
           font-size: 5.52vw;
+          padding-top: 4vw;
       }
       .designation2{
           color: rgba(0, 0, 0, 0.45);
+          font-size: 3.23vw;
+          padding-top: 8.5vw;
+          padding-bottom: 3.5vw;
       }
       .linkedin2{
-          font-size: 2.24vw;
+          font-size: 2.2vw;
           height: 2.82vw;
           color: #004A3C;
           width: fit-content;
@@ -514,6 +547,11 @@ body{
           border: 0.3px solid #004A3C;
           border-radius: 8.16vw;
       }
+      .big .designation2{
+            padding-top: 0vw;
+            padding-bottom: 3.5vw;
+      }
+
   
       
   
