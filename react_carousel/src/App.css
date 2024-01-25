@@ -1,0 +1,439 @@
+
+
+@import url('https://fonts.cdnfonts.com/css/formular');
+
+.horizontal-line {
+  border: 1px solid #3DA46E;
+
+  /* You can adjust the color and thickness as needed */
+  margin: 20px 0;
+  width: 70vw;
+  margin-bottom: 80px;
+  /* Adds spacing above and below the line */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: 'Formular', sans-serif;
+}
+
+.container {
+  position: relative;
+}
+
+.sl_ellipse_one {
+  position: absolute;
+  top: -80px;
+  /* Adjust the top position as desired */
+  left: 22vw;
+
+  /* Adjust the left position as desired */
+  z-index: -1;
+  /* Place the image behind other content */
+}
+
+.sl_ellipse_two {
+  position: absolute;
+  top: 1200px;
+  /* Adjust the top position as desired */
+  left: 8%;
+  /* Adjust the left position as desired */
+  z-index: -1;
+  /* Place the image behind other content */
+}
+
+.sl_ellipse_three {
+  position: absolute;
+  top: 900px;
+  /* Adjust the top position as desired */
+  left: 63vw;
+  /* Adjust the left position as desired */
+  z-index: -1;
+  /* Place the image behind other content */
+}
+
+
+.sl_page {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.sl_heading {
+  color: #000;
+  text-align: center;
+  font-family: 'Formular', sans-serif;
+  font-size: 95.495px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 95.495px;
+  margin: 20px;
+  /* 100% */
+  letter-spacing: -1.91px;
+  width: 858px;
+}
+
+.sl_para {
+  color: #454745;
+  text-align: center;
+
+  /* Body 21.17 */
+  font-family: 'Formular', sans-serif;
+  font-size: 21.168px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27.518px;
+  /* 130% */
+  width: 508px;
+  margin-bottom: 100px;
+}
+
+.sl_box_head h2 {
+  color: rgba(0, 74, 60, 0.85);
+  font-family: 'Formular', sans-serif;
+  font-size: 21.17px;
+  font-style: normal;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+
+  line-height: 24px;
+  /* 113.368% */
+}
+
+.mobile{
+  display: none;
+}
+
+.sl_box_head p {
+  color: rgba(0, 74, 60, 0.45);
+  align-self: stretch;
+
+  /* body font style2 */
+  font-family: 'Formular', sans-serif;
+  font-size: 12.733px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20.372px;
+  /* 160% */
+  margin-top: -40px;
+  padding-top: -40px;
+}
+
+.sl_box {
+  display: flex;
+  flex-direction: row;
+  width: 858px;
+  height: 253.504px;
+  border-radius: 7.56px;
+  border: 1px solid rgba(0, 74, 60, 0.45);
+  background: #FFF;
+  margin-bottom: 20px;
+}
+
+
+.sl_box_head {
+  display: flex;
+  height: 253.504px;
+  padding: 16px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex: 1 0 0;
+}
+
+.sl_box_bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  color: #004A3C;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.sl_box_bottom_down {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: center;
+  color: #004A3C;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+
+.sl_search {
+  border-radius: 20px;
+  border: 1px solid rgba(171, 171, 171, 0.90);
+  background: #FFF;
+  display: flex;
+  width: 55vw;
+  padding: 13px 24px;
+  align-items: center;
+  gap: 2vw;
+}
+
+.sl_search input {
+  border: 0;
+  border-color: white;
+  margin: 0;
+  padding: 0;
+  line-height: 20px;
+}
+
+
+
+.sl_box_img img {
+  border-top-left-radius: 7.56px;
+  border-bottom-left-radius: 7.56px;
+
+}
+
+
+/* 
+.sl_box_bottom_down { */
+/* display: flex;
+  flex-direction: row;
+  gap: 20px; */
+/* display: flex;
+  padding: 15.504px 13.4px 14px 13.4px;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row; */
+/* } */
+.custom-input {
+  border: 1px solid #ccc;
+  /* Initial border style */
+  padding: 10px;
+  transition: border-color 0.3s;
+  /* Smooth transition for border change */
+}
+
+.custom-input:focus {
+  outline: none;
+  /* Remove the default focus outline */
+  border-color: transparent;
+  /* Change the border color to transparent */
+  /* Add any additional styling for the focused state */
+}
+
+.sl_123 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+  margin-bottom: 40px;
+  align-items: center;
+  justify-content: space-between;
+  color: rgba(0, 74, 60, 0.40);
+  font-family: 'Formular', sans-serif;
+  font-size: 21.17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  /* 113.368% */
+}
+
+.sl_123_1 {
+
+  margin-right: 20px;
+  color: rgba(0, 74, 60, 0.40);
+  font-family: 'Formular', sans-serif;
+  font-size: 21.17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  /* 113.368% */
+}
+
+.sl_123_2 {
+
+  margin-right: 20px;
+  color: rgba(0, 74, 60, 0.40);
+  font-family: 'Formular', sans-serif;
+  font-size: 21.17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  /* 113.368% */
+}
+
+.sl_123_3 {
+
+  margin-right: 20px;
+  color: rgba(0, 74, 60, 0.40);
+  font-family: 'Formular', sans-serif;
+  font-size: 21.17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  /* 113.368% */
+}
+
+
+@media screen and (max-width: 520px) {
+  .sl_box {
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    height: 800px;
+    border-radius: 7.56px;
+    border: 1px solid rgba(0, 74, 60, 0.45);
+    background: #FFF;
+    margin-bottom: 20px;
+  }
+
+  .sl_heading {
+    font-size: 50px;
+  }
+
+  .sl_ellipse_one {
+    height: 160px;
+    top: 0;
+    left: 0;
+
+  }
+
+  .sl_para {
+    width: 80vw;
+  }
+
+  .sl_ellipse_two {
+    position: absolute;
+
+    /* Adjust the top position as desired */
+
+    /* Adjust the left position as desired */
+    z-index: -1;
+    /* Place the image behind other content */
+  }
+
+  .sl_ellipse_three {
+    position: absolute;
+
+    /* Adjust the top position as desired */
+
+    /* Adjust the left position as desired */
+    z-index: -1;
+    /* Place the image behind other content */
+  }
+
+  .sl_box_img img {
+    height: 45vw;
+
+  }
+
+  .sl_box{
+    width: 357px;
+    height: 500px;
+  }
+  
+
+  .sl_box_head{
+    
+    height: 100px;
+    padding: 0;
+    margin: 0;
+
+  }
+
+  
+  .sl_box_head h2{
+    margin: 0;
+    font-size: 25px;
+    width: 325px;
+    height: 24px; 
+    margin-top: 16px;
+    margin-left: 16px;
+    line-height: 24px;
+    margin-bottom: -10px;
+  }
+  
+  .sl_box_head p{
+    margin: 0;
+    padding: 0;
+    width: 325px;
+    height: 62px;
+    margin-top: 26px;
+    margin-left: 16px;
+  }
+
+
+  .sl_box_img img {
+    width: 355.4px; 
+    margin: 0;
+    padding: 0;
+    height: 262px;
+  }
+
+  
+.horizontal-line {
+
+
+  width: 357px;
+
+}
+
+.sl_search{
+  width: 357px;
+  height: 50px;
+
+}
+
+.sl_heading{
+  width: 292px;
+}
+
+.sl_para{
+  width: 356px;
+}
+.desktop{
+  display: none;
+}
+.mobile{
+  display: block;
+}
+.sl_box_bottom_down {
+  
+  display: flex;
+  flex-direction: row;
+  width: 100px;
+  justify-content: space-between;
+  margin-right: 30px;
+  
+  
+}
+
+
+}
+.sl_box_bottom_down p img {
+  width: 11px;
+  height: 12px;
+  margin-top: 4px;
+  margin-left: 8px;
+}
+.sl_box_bottom_down p{
+  
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+ 
+  
+}
