@@ -1,0 +1,92 @@
+.carousel-box{
+    width: 1378.665px;
+    height: 450.62018ox;
+    display: block;
+}
+/* .carousel-content{
+    left: 5%;
+    top: 50%;
+    width: 503.259px;
+    color: black;
+    font-family: Formular;
+    font-style: normal;
+    font-size: 46.872px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+} */
+.carousel-block{
+    position: relative;
+    /* left: 526px; */
+}
+.react-multi-carousel-item{
+    width: 780px !important;
+}
+.block{
+    height: 452px;
+    width: 333px;
+}
+.block-title{
+    width: 100%;
+    height: 8.85%;
+    top: 0;
+    color: #004a3c;
+    font-size: 12.73px;
+    font-family: Formular;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    position: relative;
+}
+img{
+    height: 209PX;
+    width: 100%;
+    position: relative;
+    top: 0px;
+}
+.block-head{
+    color: #004a3c;
+    font-family: Formular;
+    font-size: 21.17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    top: 0px;
+    position: relative;
+    left: 16px;
+}
+.block-body{
+    flex: 1 0 0;
+    color: rgba(0, 74, 68, 0.45);
+    font-family: Formular;
+    font-size: 10.58px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    position: relative;
+    top: 8px;
+    left: 16px;
+}
+.block-button{
+    display: flex;
+    width: 94.126px;
+    left: 16px;
+    top: 16px;
+    position: relative;
+    height: 20.584px;
+    padding: 15.504px 13.4px 14px 13.4px;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-radius: 7.562px;
+    background-color: #b0ffc2;
+    color: #004a3c;
+    text-align: center;
+    font-family: Formular;
+    font-size: 10.584px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 12.701px;
+    letter-spacing: 1.058px;
+    text-transform: uppercase;
+    cursor: pointer;
+}

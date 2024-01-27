@@ -1,0 +1,77 @@
+body{
+    
+    font-family: sans-serif;
+}
+.row{
+    gap: 40px;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.container{
+    background-image: url('C:\Users\Admin\OneDrive\Desktop\quant page\newpage\src\image 81 (3).jpg');
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: auto;
+    height: 273.07266px;
+    width: 100%;
+    top: 0px;
+    left: 0;
+    border: solid black 1px;      
+    gap: 50px;
+    min-width: auto;
+}
+#data{
+    position: relative;
+    flex-direction: column;
+    top: -40px;
+    color: black;
+    text-align: center;
+    font-family: inter;
+    font-size: 46.872px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30.559px;
+    letter-spacing: -0.937px;
+}
+#data, div{
+    display: inline-block;
+    position: relative;
+    top: 40px;
+    color: black;
+    font-size: 46.872px;
+    font-weight: 400;
+    font-style: normal;
+    font-family: inter;
+    line-height: 30.559px;
+    letter-spacing: -0.937px;
+    text-align: center;
+}
+#value-holders{
+    position: relative;
+    flex-direction: column;
+    top: 40px;
+    color: #454745;
+    font-family: inter;
+    font-size: 11.146px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19.354px;
+}
+
+.neww{
+    display: flex;
+    flex-direction: row;
+
+}
+.roo{
+    display: flex;
+    flex-direction: row;
+}
+
+/* .num, span{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+} */
