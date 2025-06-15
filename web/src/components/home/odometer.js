@@ -1,8 +1,7 @@
 import React from 'react'
 import CountUp from 'react-countup';
-import './odometer.css';
-import './mission.css'
-import hi from '../coin 4png.png';
+import './odometer copy.css';
+
 
 function Odometer() {
   return (

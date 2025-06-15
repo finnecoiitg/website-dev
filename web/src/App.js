@@ -10,10 +10,12 @@ import Fin from "./components/pages/fin";
 function App() {
   return (
     <>
-    {/* <Navbar/> */}
-    {/* <Odometer/> */}
-
-  
+      <Navbar/>
+      <Odometer/>
+      <Teams/>
+      <Fin></Fin>
+      <Footer></Footer>
+      <Contactus></Contactus>
     </>
   );
 }
