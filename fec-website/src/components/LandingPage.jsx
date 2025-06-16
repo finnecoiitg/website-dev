@@ -1,52 +1,67 @@
 import React from 'react';
-// In a real React project, you would import the CSS file like this:
 import './LandingPage.css';
-// And the Footer component would be imported from a separate file:
 import Footer from './Footer';
-
+import Navbar from './Navbar';
+import CountUp from 'react-countup';
+import coin4 from '../img/coin4.png';
+import Rotat2png from '../img/Rotat2png.png';
 
 
 const LandingPage = () => {
   return (
     <div className="landing-page-container">
+      <Navbar />
       <div className="content-wrapper">
-          <div className="site-title">Finance & Economics</div>
+
         {/* Hero Section */}
         <section className="hero-section">
           <div className="hero-content">
-            <h1 className="hero-title">
-              Finance & <br /> Economics
-            </h1>
-            <p className="hero-description">
-              Transforming the future of financial education and innovation.
-            </p>
-            <button className="learn-more-button">
-              LEARN MORE <span>→</span>
-            </button>
+            <h1 className="hero-title">Finance & <br /> Economics</h1>
+            <div className='hero'>
+              <div className="hero-description">
+                <span className="btn1"><button><span>Join Us</span> <span>→</span> </button></span>
+                <span className="btn2"><button><span>Explore</span> <span>→</span> </button></span>
+              </div>
+              <div className="message">
+                <p>
+                  FEC functions as a platform for students to come together and learn the intriguing and fun world of finance.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="coin_images">
+            <div className="i1"><img src = {coin4} alt="" /></div>
+            <div className="i2"><img src = {coin4} alt="" /></div>
+            <div className="i3"><img src = {Rotat2png} alt="" /></div>
           </div>
         </section>
+
+        <div className='moto' >
+          <p>OUR MOTTO:</p>
+          <span>Be an asset Not a liability</span>
+        </div>
 
         {/* Statistics Section */}
         <section className="stats-section">
           <div className="stats-grid">
             <div className="stat-item">
-              <span className="stat-number">+50B</span>
+              <span className="stat-number">+<CountUp start={0} end={50} duration={2} delay={0} />B</span>
               <span className="stat-label">Working Hours</span>
             </div>
             <div className="stat-item">
-              <span className="stat-number">+50M</span>
+              <span className="stat-number">+<CountUp start={0} end={50} duration={2} delay={0} />M</span>
               <span className="stat-label">Projects Completed</span>
             </div>
             <div className="stat-item">
-              <span className="stat-number">+10M</span>
+              <span className="stat-number">+<CountUp start={0} end={10} duration={2} delay={0} />M</span>
               <span className="stat-label">Happy Clients</span>
             </div>
             <div className="stat-item">
-              <span className="stat-number">+500</span>
+              <span className="stat-number">+<CountUp start={0} end={500} duration={2} delay={0} /></span>
               <span className="stat-label">Global Partners</span>
             </div>
             <div className="stat-item">
-              <span className="stat-number">+$1B</span>
+              <span className="stat-number">+$<CountUp start={0} end={1} duration={2} delay={0} />B</span>
               <span className="stat-label">Revenue Generated</span>
             </div>
           </div>
@@ -67,8 +82,11 @@ const LandingPage = () => {
               <h2 className="join-network-title">
                 Join our expanding network with
               </h2>
+              <h4 style={{color: '#7AFFA1'}}>
+                Exciting events, courses, workshops and more.
+              </h4>
               <button className="join-us-button">
-                JOIN US <span>→</span>
+                Learn More <span>→</span>
               </button>
             </div>
           </div>
@@ -181,12 +199,6 @@ const LandingPage = () => {
               <h2 className="contact-form-title">
                 Have a question or an idea to share with us? Drop us a line
               </h2>
-              <img
-                src="iPhone 14 - 4.jpg" // Using the iPhone image as a general illustration for contact
-                alt="Contact Us"
-                className="contact-image"
-                onError={(e) => { e.target.onerror = null; e.target.src = 'https://placehold.co/250x250/A0D8B3/1E4B4C?text=Contact+Image'; }}
-              />
             </div>
             <div className="contact-form-fields-container">
               <form className="contact-form">
