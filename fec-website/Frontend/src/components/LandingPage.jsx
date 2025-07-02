@@ -5,6 +5,9 @@ import Navbar from './Navbar';
 import CountUp from 'react-countup';
 import coin4 from '../img/coin4.png';
 import Rotat2png from '../img/Rotat2png.png';
+import VideoPlayer from '../img/VideoPlayer.png';
+import Teams from './Teams';
+import ProfilePic from '../img/ProfilePic.svg';
 
 
 const LandingPage = () => {
@@ -30,9 +33,9 @@ const LandingPage = () => {
             </div>
           </div>
           <div className="coin_images">
-            <div className="i1"><img src = {coin4} alt="" /></div>
-            <div className="i2"><img src = {coin4} alt="" /></div>
-            <div className="i3"><img src = {Rotat2png} alt="" /></div>
+            <div className="i1"><img src={coin4} alt="" /></div>
+            <div className="i2"><img src={coin4} alt="" /></div>
+            <div className="i3"><img src={Rotat2png} alt="" /></div>
           </div>
         </section>
 
@@ -72,7 +75,7 @@ const LandingPage = () => {
           <div className="join-network-content">
             <div className="join-network-image-container">
               <img
-                src="Rectangle 685.png" // Using a generic dark rectangle for the image
+                src={VideoPlayer} // Using a generic dark rectangle for the image
                 alt="Join our network"
                 className="join-network-image"
                 onError={(e) => { e.target.onerror = null; e.target.src = 'https://placehold.co/400x300/0F343A/FFFFFF?text=Network+Image'; }}
@@ -82,7 +85,7 @@ const LandingPage = () => {
               <h2 className="join-network-title">
                 Join our expanding network with
               </h2>
-              <h4 style={{color: '#7AFFA1'}}>
+              <h4 style={{ color: '#7AFFA1' }}>
                 Exciting events, courses, workshops and more.
               </h4>
               <button className="join-us-button">
@@ -94,81 +97,56 @@ const LandingPage = () => {
 
         {/* Teams Section */}
         <section className="teams-section">
-          <h2 className="teams-title">
+          <h3 className="teams-title">
             Have a look at the teams working here
-          </h2>
-          <div className="teams-grid">
-            {/* FEC Capital Card */}
-            <div className="team-card">
-              <h3 className="team-card-title">FEC Capital</h3>
-              <img
-                src="FEC Capital.jpg"
-                alt="FEC Capital"
-                className="team-card-image"
-                onError={(e) => { e.target.onerror = null; e.target.src = 'https://placehold.co/300x200/A0D8B3/1E4B4C?text=FEC+Capital'; }}
-              />
-              <p className="team-card-description">
-                Our mission is to create meaningful opportunities for personal and professional growth. Through collaboration, innovation, and hard work, we strive to create sustainable solutions to the challenges facing our community.
-              </p>
-              <button className="explore-button">
-                EXPLORE <span>→</span>
-              </button>
-            </div>
-
-            {/* FEC Quant Card */}
-            <div className="team-card">
-              <h3 className="team-card-title">FEC Quant</h3>
-              <img
-                src="FEC Quant.jpg"
-                alt="FEC Quant"
-                className="team-card-image"
-                onError={(e) => { e.target.onerror = null; e.target.src = 'https://placehold.co/300x200/A0D8B3/1E4B4C?text=FEC+Quant'; }}
-              />
-              <p className="team-card-description">
-                Our mission is to create meaningful opportunities for personal and professional growth. Through collaboration, innovation, and hard work, we strive to create sustainable solutions to the challenges facing our community.
-              </p>
-              <button className="explore-button">
-                EXPLORE <span>→</span>
-              </button>
-            </div>
-
-            {/* Placeholder for a third card if needed based on Figma, or hide if not */}
-            <div className="team-card">
-              <h3 className="team-card-title">FEC Research</h3>
-              <img
-                src="https://placehold.co/300x200/A0D8B3/1E4B4C?text=FEC+Research"
-                alt="FEC Research"
-                className="team-card-image"
-              />
-              <p className="team-card-description">
-                Our mission is to create meaningful opportunities for personal and professional growth. Through collaboration, innovation, and hard work, we strive to create sustainable solutions to the challenges facing our community.
-              </p>
-              <button className="explore-button">
-                EXPLORE <span>→</span>
-              </button>
-            </div>
-          </div>
+          </h3>
+          <Teams />
         </section>
 
         {/* Testimonials Section */}
         <section className="testimonials-section">
-          <h2 className="testimonials-title">
-            What students have to say about us?
-          </h2>
-          <div className="testimonials-grid">
-            {/* Testimonial 1 */}
-            <div className="testimonial-card">
-              <p className="testimonial-text">
-                "Joining Finance & Economics has been a game-changer for my career. The insights and opportunities are unparalleled."
-              </p>
-              <p className="testimonial-author">- Jane Doe, University Student</p>
+          <div className="india">
+            <div className="title-aks"><p>What students have to<br /> say about us?</p></div>
+          </div>
+          <div className="wrapper">
+            <div className="item col1 hey">
+              <p>Live data plays a big role in my design
+                process. Thanks to Kernel I can now use it without any hassle and shorten my process which makes it a key tool for me.</p>
+              <div className="aks-grid-item4 aks-grid-item">
+                <div className="pic-aks">
+                  <img alt="profile-pic"   src={ProfilePic}/>
+                </div>
+                <div className="info-aks">
+                  <p className="commentor-aks">Shashwat Pandey</p>
+                  <p className="post-aks"> Secy</p>
+                </div>
+              </div>
             </div>
-            {/* Testimonial 2 */}
-            <div className="testimonial-card">
-              <p className="testimonial-text">
-                "The community and resources provided by FEC are top-notch. I've learned so much and connected with incredible people."
-              </p>
-              <p className="testimonial-author">- John Smith, Recent Graduate</p>
+            <div className="item col1 hey">
+              <p>Live data plays a big role in my design
+                process. Thanks to Kernel I can now use it without any hassle and shorten my process which makes it a key tool for me.</p>
+              <div className="aks-grid-item4 aks-grid-item">
+                <div className="pic-aks">
+                  <img alt="profile-pic"   src={ProfilePic}/>
+                </div>
+                <div className="info-aks">
+                  <p className="commentor-aks">Shashwat Pandey</p>
+                  <p className="post-aks"> Secy</p>
+                </div>
+              </div>
+            </div>
+            <div className="item col1 key">
+              <p>Live data plays a big role in my design
+                process. Thanks to Kernel I can now use it without any hassle and shorten my process which makes it a key tool for me.</p>
+              <div className="aks-grid-item4 aks-grid-item">
+                <div className="pic-aks">
+                  <img alt="profile-pic"   src={ProfilePic}/>
+                </div>
+                <div className="info-aks">
+                  <p className="commentor-aks">Shashwat Pandey</p>
+                  <p className="post-aks"> Secy</p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
