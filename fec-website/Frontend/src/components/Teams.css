@@ -1,83 +1,10 @@
-.wrapper {
-    max-height: auto;
-    display: flex;
-    overflow-x: auto;
-    margin-bottom: 500px;
-    margin-left: 14vw;
-}
-
-.wrapper::-webkit-scrollbar {
-    width: 0;
-}
-
-.wrapper .item {
-    min-width: 300px;
-    width: 343px;
-    text-align: left;
-    margin-right: 2px;
-    display: flex;
-    flex-direction: column;
-    padding: 1vw 1vw 0.5vw 1vw;
-}
-
-.hey {
-    border-right: 0.5px solid #3DA46E;
-}
-
-.hey>p {
-    height: fit-content;
-}
-
-.item>p {
-    color: #454745;
-    font-size: 16px;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 27px;
-    text-align: left;
-    padding: 0 10px 0 10px;
-}
-
-.main {
-    margin-left: 4%;
-    margin-right: 4%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-}
-
-.india {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 14%;
-    margin-right: 14%;
-    justify-items: space-between;
-    flex-wrap: nowrap;
-}
-
-.title-aks {
-    display: flex;
-    width: 100%;
-    justify-content: flex-start;
-    margin-bottom: 0px;
-    margin-left: 20px;
-}
-
 .akshaya {
     display: flex;
     width: 100%;
-    padding-bottom: 100px;
     justify-content: center;
     justify-items: center;
     align-items: center;
     flex-wrap: nowrap;
-    /* flex nowrap krke media query daaldo */
-
 }
 
 .card {
@@ -250,26 +177,5 @@ p {
 
     .akshaya>.card {
         flex-basis: 100%;
-        /* Take up full width in mobile view */
     }
-}
-
-.info-aks>h4 {
-    margin-top: 0;
-    margin-bottom: 8px;
-}
-
-.post-aks {
-    margin-top: 0;
-}
-
-.commentor-aks {
-    font-size: 14px;
-    margin-bottom: 0px;
-    line-height: 25px;
-    margin-top: 0;
-}
-
-.bhai {
-    margin-bottom: 40rem;
 }
