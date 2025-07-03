@@ -1,0 +1,541 @@
+/* === Main Section === */
+.courses-section {
+  position: relative;
+  background: white;
+  padding: 4rem 2rem 100px 2rem;
+  overflow: hidden;
+  font-family: "Formular", sans-serif;
+}
+
+/* === Blob Group Base === */
+.coin {
+    position: absolute;
+    object-fit: contain;
+    z-index: 2;
+    display: none;
+  }
+.blob-group {
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.ellipse {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.ellipse-blur {
+  width: 100%;
+  height: 100%;
+  background: #a3ffb8;
+  opacity: 0.5;
+  filter: blur(40px);
+}
+
+.ellipse-gradient {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    311.46deg,
+    #b0ffc2 17.03%,
+    rgba(176, 255, 194, 0) 79.45%
+  );
+}
+
+.ellipse-texture {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  mix-blend-mode: overlay;
+  border-radius: 600px;
+  opacity: 0.3;
+}
+
+/* === Blob Positions === */
+.group-top-left {
+  width: 243px;
+  height: 255px;
+  top: -10px;
+  left: 60px;
+}
+
+.group-top-right {
+  width: 600px;
+  height: 600px;
+  top: 91px;
+  right: -180px;
+  left: auto;
+}
+
+.group-bottom-left {
+  width: 520px;
+  height: 520px;
+  bottom: 60px;
+  left: -60px;
+  top: auto;
+  z-index: 0;
+}
+
+/* === Section Header === */
+.section-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 4rem auto;
+  position: relative;
+  z-index: 2;
+}
+
+.section-header h2 {
+  font-weight: 400;
+  font-size: 5.5rem;
+  line-height: 1.05;
+  letter-spacing: -1.5px;
+  color: #000;
+  margin-bottom: 2rem;
+}
+
+.section-header p {
+  font-weight: 400;
+  font-size: 1.32rem;
+  line-height: 1.35;
+  color: #5a5b5a;
+  max-width: 520px;
+  margin: 2.5rem auto 0 auto;
+}
+
+/* === Course List Layout === */
+.page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.course-container {
+  display: flex;
+  flex-direction: column;
+  width: 885px;
+}
+
+.course-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 94px;
+  padding: 24px 0;
+  border-top: 1px solid #ababab;
+}
+
+.course-title {
+  width: 307px;
+  font-family: "Formular", sans-serif;
+  font-size: 33px;
+  line-height: 40px;
+  letter-spacing: -0.6px;
+  color: #000;
+}
+
+.course-description {
+  width: 190px;
+  font-family: "Formular", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000;
+}
+
+.course-link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: "Formular", sans-serif;
+  font-size: 12.7px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.arrow {
+  font-size: 12px;
+}
+
+/* === Benefits Section === */
+.benefits-container {
+  position: relative;
+  max-width: 100%;
+  margin-inline: 200px;
+  margin-top: 60px;
+  padding: 20px;
+  font-family: "Formular", sans-serif;
+  color: #131313;
+  padding-bottom: 200px; /* Space for logo */
+  z-index: 1;
+}
+
+.benefits-header h2 {
+  font-size: 46.87px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: -0.96px;
+  margin-bottom: 20px;
+}
+
+.benefits-header p {
+  font-size: 17.51px;
+  line-height: 24px;
+  letter-spacing: -0.09px;
+  color: #131313;
+  max-width: 520px;
+}
+
+.benefits-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin-top: 60px;
+}
+
+.benefit-card {
+  display: flex;
+  width: 340px;
+  gap: 20px;
+  position: relative;
+  z-index: 2;
+  min-height: 240px;
+}
+
+.line-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 8px;
+  height: 100%;
+}
+
+.dashed-line {
+  width: 1px;
+  flex-grow: 1;
+  border-left: 1px dashed #004a3c;
+  opacity: 0.5;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background: #004a3c;
+  border-radius: 50%;
+  margin-top: 4px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.card-content h3 {
+  font-size: 27.22px;
+  line-height: 30px;
+  font-weight: 400;
+  letter-spacing: -0.384px;
+}
+
+.card-content p {
+  font-size: 16.63px;
+  line-height: 27px;
+  color: #52525b;
+}
+
+/* === Staggered Staircase Effect === */
+.benefit-card:nth-child(1) {
+  margin-top: 300px;
+}
+
+.benefit-card:nth-child(2) {
+  margin-top: 150px;
+  margin-bottom: 70px;
+}
+
+.benefit-card:nth-child(3) {
+  margin-top: 0;
+  margin-bottom: 150px;
+}
+
+/* === Logo Behind Staircase === */
+.logo-wrapper {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  opacity: 0.6;
+  pointer-events: none;
+  padding: 20px;
+}
+
+.logo-wrapper img {
+  width: 300px;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.05));
+}
+
+@media (max-width: 767px) {
+  /* Benefits Section Mobile Styles */
+  .benefits-container {
+    margin-top: 0px;
+    margin-inline: 0;
+    padding: 32px 16px;
+    padding-bottom: 120px;
+    background-color: rgba(26, 26, 26, 0.1);
+  }
+
+  .benefits-header h2 {
+    font-size: 50px;
+    line-height: auto;
+    letter-spacing: -0.5px;
+    margin-bottom: 16px;
+  }
+
+  .benefits-header p {
+    font-size: 20px;
+    line-height: 22px;
+    max-width: 100%;
+  }
+
+  .benefits-grid {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 40px;
+    padding-left: 24px; /* space for vertical line */
+  }
+
+  /* Vertical dashed timeline line */
+  .benefits-grid::before {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 8px;
+    bottom: 125px; /* stops just below last heading */
+    width: 1px;
+    background: repeating-linear-gradient(
+      to bottom,
+      #004a3c,
+      #004a3c 4px,
+      transparent 4px,
+      transparent 8px
+    );
+    opacity: 0.5;
+    z-index: 0;
+  }
+
+  .benefit-card {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    width: 100%;
+    min-height: auto;
+    margin: 0 0 40px 0;
+  }
+
+  /* Hide the desktop line wrapper */
+  .line-wrapper {
+    display: none;
+  }
+
+  .dot {
+    width: 8px;
+    height: 8px;
+    background: #004a3c;
+    border-radius: 50%;
+    margin-top: 50px;
+    flex-shrink: 0;
+  }
+
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .card-content h3 {
+    font-size: 30px;
+    line-height: auto;
+    letter-spacing: -0.3px;
+  }
+
+  .card-content p {
+    font-size: 20px;
+    line-height: auto;
+    color: #52525b;
+  }
+
+  /* Remove stair-step margin on mobile */
+  .benefit-card:nth-child(1),
+  .benefit-card:nth-child(2),
+  .benefit-card:nth-child(3) {
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+
+  .logo-wrapper {
+    display: none; /* hide logo for mobile simplicity */
+  }
+
+  .courses-section {
+    padding: 80px 20px 100px 20px; /* Standard desktop padding */
+    align-items: center;
+  }
+
+  .blob-group.group-top-left {
+    width: 243px;
+    height: 255px;
+    top: -10px;
+    left: 60px;
+    transform: none; /* Remove transform for desktop */
+    display: none; /* Ensure visible */
+  }
+
+  .blob-group.group-top-right {
+    width: 600px;
+    height: 600px;
+    top: 91px;
+    right: -180px;
+    left: auto;
+    display: block; /* Ensure visible */
+  }
+
+  .blob-group.group-bottom-left {
+    width: 520px;
+    height: 520px;
+    bottom: 60px;
+    left: -60px;
+    top: auto;
+    z-index: 0;
+    display: block; /* Ensure visible */
+  }
+
+  .top-section-coin-wrapper {
+    display: none; /* Hide this on desktop if coin is not part of the main blob display */
+  }
+
+  .section-header {
+    padding-top: 50px; /* Increase to push it down */
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto 12px auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  .section-header h2 {
+    font-size: 5.5rem;
+    line-height: 1.05;
+    letter-spacing: -1.5px;
+    margin-bottom: 2rem;
+  }
+
+  .section-header p {
+    font-size: 1.32rem;
+    line-height: 1.35;
+    max-width: 520px;
+    margin: 2.5rem auto 0 auto;
+    padding: 0;
+  }
+
+  /* Course layout (optional, if used on mobile) */
+  .course-container {
+    width: 885px; /* Desktop width */
+    max-width: none; /* Remove max width */
+    position: relative;
+  }
+  .course-row {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  .course-title {
+    font-size: 40px;
+    width: 100%;
+  }
+
+  .course-description {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .course-link {
+    font-size: 12px;
+  }
+  /* === Section Header Optimized for Mobile === */
+  .courses-section {
+    padding: 80px 20px 100px 20px; /* Standard desktop padding */
+    align-items: center;
+  }
+  .mobile-coin-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+    margin-top: 12px;
+    margin-bottom: -10px;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Container to hold absolutely positioned coins */
+  .coin-position-wrapper {
+    position: relative;
+    width: 100%;
+    height: 200px; /* Enough space to contain the coins above the heading */
+    margin-bottom: -30px; /* Pull section header up */
+    margin-top: -80px;
+  }
+
+  /* Shared Coin Style */
+  .coin {
+    position: absolute;
+    object-fit: contain;
+    z-index: 2;
+    display: block;
+  }
+
+  /* === Individual Coin Styles Based on Your Provided Positions === */
+
+  /* Rotat2png */
+  .rotat2 {
+    width: 80px;
+    height: auto;
+    top: 20px;
+    left: 68%;
+    transform: translateX(-50%);
+    filter: blur(1.2px);
+  }
+
+  /* coin 4png (left) */
+  .coin4-left {
+    width: 200px;
+    height: auto;
+    top: 5px;
+    left: 50px;
+    filter: blur(0.6px);
+    transform: rotate(-2deg);
+  }
+
+  /* coin 4png (rotated) */
+  .coin4-rotated {
+    width: 250px;
+    height: auto;
+    top: 75px;
+    left: 70px;
+    transform: rotate(12deg);
+  }
+  .page-wrapper {
+  padding-top: 0%; 
+}
+}
