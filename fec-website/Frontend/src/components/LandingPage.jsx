@@ -1,14 +1,26 @@
 import React from 'react';
 import './LandingPage.css';
-import Footer from './Footer';
-import Navbar from './Navbar';
+
 import CountUp from 'react-countup';
 import coin4 from '../img/coin4.png';
 import Rotat2png from '../img/Rotat2png.png';
 import VideoPlayer from '../img/VideoPlayer.png';
-import Teams from './Teams';
 import ProfilePic from '../img/ProfilePic.svg';
+import Yes3 from '../img/Yes3.png';
+import Binance from '../img/Binance.svg';
+import Frame3652 from '../img/Frame3652.svg';
+import Frame3653 from '../img/Frame3653.svg';
+import Frame3654 from '../img/Frame3654.svg';
+import Frame3655 from '../img/Frame3655.svg';
+import Frame3656 from '../img/Frame3656.svg';
+import Frame3657 from '../img/Frame3657.svg';
+import Frame3658 from '../img/Frame3658.svg';
 
+import Footer from './Footer';
+import Navbar from './Navbar';
+import Teams from './Teams';
+import DiscoverPotential from './DiscoverPotential';
+import ContactForm from './ContactForm'; 
 
 const LandingPage = () => {
   return (
@@ -22,8 +34,8 @@ const LandingPage = () => {
             <h1 className="hero-title">Finance & <br /> Economics</h1>
             <div className='hero'>
               <div className="hero-description">
-                <span className="btn1"><button><span>Join Us</span> <span>→</span> </button></span>
-                <span className="btn2"><button><span>Explore</span> <span>→</span> </button></span>
+                <span className="btn1"><button><span>JOIN US</span> <span>→</span> </button></span>
+                <span className="btn2"><button><span>EXPLORE</span> <span>→</span> </button></span>
               </div>
               <div className="message">
                 <p>
@@ -75,7 +87,7 @@ const LandingPage = () => {
           <div className="join-network-content">
             <div className="join-network-image-container">
               <img
-                src={VideoPlayer} // Using a generic dark rectangle for the image
+                src={VideoPlayer}
                 alt="Join our network"
                 className="join-network-image"
                 onError={(e) => { e.target.onerror = null; e.target.src = 'https://placehold.co/400x300/0F343A/FFFFFF?text=Network+Image'; }}
@@ -106,7 +118,9 @@ const LandingPage = () => {
         {/* Testimonials Section */}
         <section className="testimonials-section">
           <div className="india">
-            <div className="title-aks"><p>What students have to<br /> say about us?</p></div>
+            <h3 className="title-aks">
+              What students have to <br /> say about us?
+            </h3>
           </div>
           <div className="wrapper">
             <div className="item col1 hey">
@@ -151,77 +165,72 @@ const LandingPage = () => {
           </div>
         </section>
 
-        {/* Discover Potential Section */}
-        <section className="discover-potential-section">
-          <div className="discover-potential-content">
-            <div className="discover-potential-text-container">
-              <h2 className="discover-potential-title">
-                Discover your potential with us
-              </h2>
+        {/* Ecosystem Partners Section */}
+        <section className="ecosystem-section">
+          <h2 className="ecosystem-title">
+            Our expanding network<br />of ecosystems
+          </h2>
+          {/* First row (always visible) */}
+          <div className="ecosystem-logos-row ecosystem-row-main">
+            <div className="ecosystem-logo-item">
+              <img src={Frame3652} alt="Mudrex" />
             </div>
-            <div className="discover-potential-image-container">
-              <img
-                src="Landing page.jpg" // Using the landing page image as a general illustration
-                alt="Discover Potential"
-                className="discover-potential-image"
-                onError={(e) => { e.target.onerror = null; e.target.src = 'https://placehold.co/400x300/1E4B4C/FFFFFF?text=Potential+Image'; }}
-              />
+            <div className="ecosystem-logo-item">
+              <img src={Frame3653} alt="Worldquant" />
+            </div>
+            <div className="ecosystem-logo-item">
+              <img src={Frame3654} alt="Upsurge" />
+            </div>
+            <div className="ecosystem-logo-item">
+              <img src={Frame3655} alt="Nobias" />
+            </div>
+            <div className="ecosystem-logo-item">
+              <img src={Frame3656} alt="The Product House" />
+            </div>
+            <div className="ecosystem-logo-item">
+              <img src={Frame3657} alt="Finalytics" />
+            </div>
+            <div className="ecosystem-logo-item binance-mobile-only">
+              <img src={Binance} alt="Binance" />
+            </div>
+          </div>
+          {/* Second row (repeats some items, only visible on desktop/laptop) */}
+          <div className="ecosystem-logos-row ecosystem-row-desktop">
+            <div className="ecosystem-logo-item">
+              <img src={Frame3652} alt="Mudrex" />
+            </div>
+            <div className="ecosystem-logo-item">
+              <img src={Frame3653} alt="Worldquant" />
+            </div>
+            <div className="ecosystem-logo-item">
+              <img src={Frame3654} alt="Upsurge" />
+            </div>
+            <div className="ecosystem-logo-item">
+              <img src={Frame3655} alt="Nobias" />
+            </div>
+            <div className="ecosystem-logo-item">
+              <img src={Frame3656} alt="The Product House" />
+            </div>
+            <div className="ecosystem-logo-item">
+              <img src={Frame3657} alt="Finalytics" />
+            </div>
+            <div className="ecosystem-logo-item">
+              <img src={Frame3658} alt="GrowJunction" />
             </div>
           </div>
         </section>
 
+        {/* Discover Potential Section */}
+        <section className="discover-potential-section">
+          <DiscoverPotential />
+        </section>
+
         {/* Contact Form Section */}
         <section className="contact-form-section">
-          <div className="contact-form-container">
-            <div className="contact-form-text-container">
-              <h2 className="contact-form-title">
-                Have a question or an idea to share with us? Drop us a line
-              </h2>
-            </div>
-            <div className="contact-form-fields-container">
-              <form className="contact-form">
-                <div>
-                  <label htmlFor="name" className="form-label">
-                    Name
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    className="form-input"
-                    placeholder="Your Name"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="email" className="form-label">
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    className="form-input"
-                    placeholder="Your Email"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="message" className="form-label">
-                    Message
-                  </label>
-                  <textarea
-                    id="message"
-                    rows="4"
-                    className="form-textarea"
-                    placeholder="Your Message"
-                  ></textarea>
-                </div>
-                <button
-                  type="submit"
-                  className="submit-button"
-                >
-                  SUBMIT <span>→</span>
-                </button>
-              </form>
-            </div>
+          <div className="imageNearBy">
+            <img src={Yes3} alt="Yes" />
           </div>
+          <ContactForm />
         </section>
 
         {/* The new Footer Component */}
