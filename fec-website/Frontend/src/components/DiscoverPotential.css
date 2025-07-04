@@ -1,0 +1,70 @@
+
+.discover-potential-content {
+    background-color: #7AFFA1;
+    padding: 2rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom-left-radius: 55px;
+    border-top-right-radius: 55px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.discover-potential-text-container {
+    text-align: center;
+    margin-bottom: 2rem;
+    width: 100%;
+    color: #000000;
+}
+
+.discover-potential-title {
+    font-size: larger;
+    font-weight: 400;
+    width: 600px;
+}
+
+.discover-potential-subtitle {
+    font-weight: 300;
+    font-size: 1.25rem;
+    color: #000000;
+    width: 300px;
+}
+
+.discover-potential-image-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.discover-potential-image {
+    width: 80%;
+    height: auto;
+    border-radius: 0.75rem;
+    object-fit: cover;
+    max-height: 300px;
+}
+
+@media (min-width: 768px) {
+    .discover-potential-content {
+        flex-direction: row;
+        padding: 3rem;
+    }
+
+    .discover-potential-text-container {
+        text-align: left;
+        margin-bottom: 0;
+        width: 50%;
+    }
+
+    .discover-potential-title {
+        font-size: 3rem;
+    }
+
+    .discover-potential-image-container {
+        justify-content: flex-end;
+        width: 50%;
+    }
+}
