@@ -122,13 +122,13 @@ const LandingPage = () => {
               What students have to <br /> say about us?
             </h3>
           </div>
-          <div className="wrapper">
-            <div className="item col1 hey">
+          <div className="testimonials-scroll-wrapper">
+            <div className="testimonial-card">
               <p>Live data plays a big role in my design
                 process. Thanks to Kernel I can now use it without any hassle and shorten my process which makes it a key tool for me.</p>
               <div className="aks-grid-item4 aks-grid-item">
                 <div className="pic-aks">
-                  <img alt="profile-pic"   src={ProfilePic}/>
+                  <img alt="profile-pic" src={ProfilePic}/>
                 </div>
                 <div className="info-aks">
                   <p className="commentor-aks">Shashwat Pandey</p>
@@ -136,12 +136,13 @@ const LandingPage = () => {
                 </div>
               </div>
             </div>
-            <div className="item col1 hey">
+            {/* Repeat .testimonial-card for each testimonial */}
+            <div className="testimonial-card">
               <p>Live data plays a big role in my design
                 process. Thanks to Kernel I can now use it without any hassle and shorten my process which makes it a key tool for me.</p>
               <div className="aks-grid-item4 aks-grid-item">
                 <div className="pic-aks">
-                  <img alt="profile-pic"   src={ProfilePic}/>
+                  <img alt="profile-pic" src={ProfilePic}/>
                 </div>
                 <div className="info-aks">
                   <p className="commentor-aks">Shashwat Pandey</p>
@@ -149,12 +150,25 @@ const LandingPage = () => {
                 </div>
               </div>
             </div>
-            <div className="item col1 key">
+            <div className="testimonial-card">
               <p>Live data plays a big role in my design
                 process. Thanks to Kernel I can now use it without any hassle and shorten my process which makes it a key tool for me.</p>
               <div className="aks-grid-item4 aks-grid-item">
                 <div className="pic-aks">
-                  <img alt="profile-pic"   src={ProfilePic}/>
+                  <img alt="profile-pic" src={ProfilePic}/>
+                </div>
+                <div className="info-aks">
+                  <p className="commentor-aks">Shashwat Pandey</p>
+                  <p className="post-aks"> Secy</p>
+                </div>
+              </div>
+            </div>
+            <div className="testimonial-card">
+              <p>Live data plays a big role in my design
+                process. Thanks to Kernel I can now use it without any hassle and shorten my process which makes it a key tool for me.</p>
+              <div className="aks-grid-item4 aks-grid-item">
+                <div className="pic-aks">
+                  <img alt="profile-pic" src={ProfilePic}/>
                 </div>
                 <div className="info-aks">
                   <p className="commentor-aks">Shashwat Pandey</p>

@@ -1,13 +1,19 @@
 import React, { useState } from 'react';
 import './Navbar.css';
 import logo from '../img/FEC_logo.png';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navLinks = [
-    "TEAMS", "EVENTS", "COURSES", "BLOGS", "RESOURCES",
-    "CONTACT US", "ALUMNI CORNER"
+    { label: "TEAMS", path: "/teams" },
+    { label: "EVENTS", path: "/events" },
+    { label: "COURSES", path: "/courses" },
+    { label: "BLOGS", path: "/blogs" },
+    { label: "RESOURCES", path: "/resources" },
+    { label: "CONTACT US", path: "/contact" },
+    { label: "ALUMNI CORNER", path: "/alumni" }
   ];
 
   return (
@@ -20,19 +26,31 @@ const Navbar = () => {
             <div className="sub">IIT Guwahati</div>
           </div>
         </div>
-
-        <ul className={`nav-links ${menuOpen ? 'open' : ''}`}>
+        {/* Desktop Nav Links */}
+        <ul className="nav-links"> {/* Removed menuOpen class here for desktop */}
           {navLinks.map((link, index) => (
-            <li key={index}>{link}</li>
+            <li key={index}>
+              <Link to={link.path}>{link.label}</Link>
+            </li>
           ))}
         </ul>
-
-      </nav>
-        <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
-          <div className={`bar ${menuOpen ? 'rotate1' : ''}`}></div>
-          <div className={`bar ${menuOpen ? 'fade' : ''}`}></div>
-          <div className={`bar ${menuOpen ? 'rotate2' : ''}`}></div>
+        {/* Hamburger */}
+        <div className={`hamburger ${menuOpen ? 'is-active' : ''}`} onClick={() => setMenuOpen(!menuOpen)}>
+          <div className="bar"></div>
+          <div className="bar"></div>
+          <div className="bar"></div>
         </div>
+      </nav>
+      {/* Mobile Fullscreen Menu */}
+      <div className={`mobile-menu-overlay ${menuOpen ? 'open' : ''}`}>
+        <ul className="mobile-nav-links">
+          {navLinks.map((link, index) => (
+            <li key={index} onClick={() => setMenuOpen(false)}>
+              <Link to={link.path}>{link.label}</Link>
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };
