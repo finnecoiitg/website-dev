@@ -7,6 +7,7 @@ const teamData = [
   { title: "FEC QUANT" },
   { title: "FEC DEFI" },
   { title: "FEC CAPITAL" },
+  { title: "FEC TRADING" }
 ];
 
 

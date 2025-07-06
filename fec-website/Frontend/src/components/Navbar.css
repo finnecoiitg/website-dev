@@ -1,6 +1,5 @@
 /* Navbar.css */
-
-.nav{
+.nav {
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -9,10 +8,10 @@
 
 .navbar {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   padding: 12px 24px;
-  background-color: #FFFFFF;
+  background-color: #FFFFFF; /* White background for desktop */
   gap: 50px;
 }
 
@@ -29,10 +28,13 @@
 .club-text {
   font-size: 14px;
   line-height: 1.1;
+  display: flex;
+  flex-direction: column;
 }
 
 .club-text .bold {
   font-weight: bold;
+  color: black; /* Default black for desktop logo text */
 }
 
 .club-text .sub {
@@ -40,10 +42,11 @@
   font-size: 12px;
 }
 
+/* Desktop Nav Links */
 .nav-links {
   display: flex;
   list-style: none;
-  gap: 24px;
+  gap: 50px;
   font-size: 14px;
   font-weight: 500;
 }
@@ -53,71 +56,142 @@
   transition: color 0.3s ease;
 }
 
+.nav-links li a {
+  text-decoration: none;
+  color: black; /* Black text for desktop links */
+  transition: color 0.3s;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+/* Highlight active link */
+.nav-links li a.active,
+.nav-links li a[aria-current="page"] {
+  color: #00c853; /* Green */
+  font-weight: 700;
+}
+
+/* On hover */
+.nav-links li a:hover {
+  color: #00c853;
+  text-decoration: none;
+}
+
 .nav-links li:hover {
   color: green;
 }
 
+/* Hamburger for mobile/tablet */
 .hamburger {
-  display: none;
+  display: none; /* Hidden by default */
   flex-direction: column;
   gap: 5px;
   cursor: pointer;
+  position: absolute; /* Position hamburger to the right */
+  top: 18px; /* Adjust as needed */
+  right: 24px; /* Adjust as needed */
+  z-index: 1100;
+  width: 25px; /* Ensure a consistent width for bars */
+  height: 20px; /* Ensure enough height for the bars */
+  justify-content: space-between; /* Distribute bars vertically */
 }
 
-.bar {
-  width: 25px;
+.hamburger .bar {
+  width: 100%; /* Bars fill the hamburger width */
   height: 3px;
-  background-color: black;
+  background-color: black; /* Black color for hamburger bars */
   transition: all 0.3s ease;
+  transform-origin: center; /* Set transform origin for rotation */
 }
 
-/* Hamburger animation */
-.rotate1 {
-  transform: rotate(45deg) translate(5px, 5px);
+/* Hamburger to cross animation */
+.hamburger.is-active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
 }
 
-.rotate2 {
-  transform: rotate(-45deg) translate(5px, -5px);
-}
-
-.fade {
+.hamburger.is-active .bar:nth-child(2) {
   opacity: 0;
 }
 
-.hamburger {
-  display: none;
-  flex-direction: column;
-  gap: 5px;
-  cursor: pointer;
-  position: absolute;
-  top: 18px;
-  right: 26px;
-  z-index: 1100;
+.hamburger.is-active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
 }
 
 
-/* Responsive: hide nav links, show hamburger */
-@media screen and (max-width: 768px) {
-  .nav-links {
-    position: absolute;
-    top: 50px;
-    left: 0;
-    right: 0;
-    color: #FFFFFF;
-    background-color: #004A3C;
-    flex-direction: column;
-    align-items: center;
-    display: none;
-    padding: 20px 0;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    z-index: 10;
-  }
+/* Mobile Fullscreen Menu Overlay */
+.mobile-menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #004a3c; /* Dark green background */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center links vertically */
+  align-items: flex-start; /* Align links to the left */
+  z-index: 1050;
+  transform: translateX(100%); /* Start off-screen to the right */
+  transition: transform 0.5s ease-in; /* Transition from right to left */
+}
 
-  .nav-links.open {
-    display: flex;
+.mobile-menu-overlay.open {
+  transform: translateX(0); /* Slide into view */
+}
+
+.mobile-nav-links {
+  list-style: none;
+  padding: 0;
+  width: 100%; /* Ensure links take full width for left alignment */
+  text-align: left; /* Align text to the left */
+  padding-left: 20px; /* Add some left padding for the links */
+}
+
+.mobile-nav-links li {
+  margin-bottom: 25px; /* Spacing between links */
+}
+
+.mobile-nav-links li a {
+  text-decoration: none;
+  color: white; /* White text for mobile menu links */
+  font-size: 24px; /* Larger font size for mobile links */
+  font-weight: 600;
+  display: block; /* Make links block level for full width clickability */
+  padding: 10px 0; /* Add padding for better touch targets */
+}
+
+.mobile-nav-links li a:hover {
+  color: #90EE90; /* Light green on hover for mobile links */
+}
+
+/* Media Queries */
+@media screen and (max-width: 992px) { /* Adjust breakpoint for tablet/laptop vs mobile */
+  .nav-links {
+    display: none; /* Hide desktop nav links on smaller screens */
   }
 
   .hamburger {
-    display: flex;
+    display: flex; /* Show hamburger on smaller screens */
+  }
+
+  .navbar {
+    justify-content: space-between; /* Adjust navbar layout for mobile */
+  }
+
+  .club-text .bold,
+  .club-text .sub {
+    color: black; /* Keep logo text black on mobile navbar */
+  }
+}
+
+/* This media query ensures the full navbar is visible on larger screens */
+@media screen and (min-width: 993px) {
+  .nav-links {
+    display: flex; /* Always show nav links on large screens */
+  }
+
+  .hamburger {
+    display: none; /* Hide hamburger on large screens */
   }
 }
