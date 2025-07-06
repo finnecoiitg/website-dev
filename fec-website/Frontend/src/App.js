@@ -1,10 +1,10 @@
-import './App.css';
-import LandingPage from './components/LandingPage';
+
+import IntroductoryOptions from "./components/IntroductoryOptions";
 
 function App() {
   return (
     <div className="App">
-      <LandingPage/>
+      <IntroductoryOptions/>
     </div>
   );
 }
