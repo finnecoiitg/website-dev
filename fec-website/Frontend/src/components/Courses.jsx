@@ -86,12 +86,14 @@ const Courses = () => {
         {/* Header */}
         <div className="section-header">
           <h2>Courses</h2>
-          <p>
+          <p className="desc">
             Dive into our comprehensive courses and eguided by expert mentors
             and enriched by engaging study materials.
           </p>
+          <button className='access-button'>
+            ACCESS MATERIAL <span className='arrow'>→</span>
+          </button>
         </div>
-
         {/* Course list */}
         <div className="page-wrapper">
           <div className="course-container">
