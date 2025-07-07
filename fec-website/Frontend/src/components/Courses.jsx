@@ -3,8 +3,8 @@ import "./Courses.css";
 import Navbar from "./Navbar";
 import logoImg from "../img/Coin.png";
 import Yes3 from "../img/Yes3.png";
-import './LandingPage.css';
-
+import "./LandingPage.css";
+import { Link } from "react-router-dom";
 
 import ContactForm from "./ContactForm";
 import Footer from "./Footer";
@@ -99,15 +99,10 @@ const Courses = () => {
               <div key={index} className="course-row">
                 <div className="course-title">{course.title}</div>
                 <div className="course-description">{course.description}</div>
-                <a
-                  className="course-link"
-                  href={course.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <Link to="/options" className="course-link">
                   <span>ACCESS MATERIAL</span>
                   <span className="arrow">↗</span>
-                </a>
+                </Link>
               </div>
             ))}
           </div>

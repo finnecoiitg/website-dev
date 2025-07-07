@@ -11,7 +11,7 @@
   justify-content: space-evenly;
   align-items: center;
   padding: 12px 24px;
-  background-color: #FFFFFF; /* White background for desktop */
+  background-color: #ffffff; /* White background for desktop */
   gap: 50px;
 }
 
@@ -118,7 +118,6 @@
   transform: translateY(-8px) rotate(-45deg);
 }
 
-
 /* Mobile Fullscreen Menu Overlay */
 .mobile-menu-overlay {
   position: fixed;
@@ -134,6 +133,7 @@
   z-index: 1050;
   transform: translateX(100%); /* Start off-screen to the right */
   transition: transform 0.5s ease-in; /* Transition from right to left */
+  display: none;
 }
 
 .mobile-menu-overlay.open {
@@ -162,11 +162,59 @@
 }
 
 .mobile-nav-links li a:hover {
-  color: #90EE90; /* Light green on hover for mobile links */
+  color: #90ee90; /* Light green on hover for mobile links */
 }
 
 /* Media Queries */
-@media screen and (max-width: 992px) { /* Adjust breakpoint for tablet/laptop vs mobile */
+@media screen and (max-width: 992px) {
+  /* Adjust breakpoint for tablet/laptop vs mobile */
+
+  /* Mobile Fullscreen Menu Overlay */
+  .mobile-menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #004a3c; /* Dark green background */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center links vertically */
+    align-items: flex-start; /* Align links to the left */
+    z-index: 1050;
+    transform: translateX(100%); /* Start off-screen to the right */
+    transition: transform 0.5s ease-in; /* Transition from right to left */
+  }
+
+  .mobile-menu-overlay.open {
+    transform: translateX(0); /* Slide into view */
+  }
+
+  .mobile-nav-links {
+    list-style: none;
+    padding: 0;
+    width: 100%; /* Ensure links take full width for left alignment */
+    text-align: left; /* Align text to the left */
+    padding-left: 20px; /* Add some left padding for the links */
+  }
+
+  .mobile-nav-links li {
+    margin-bottom: 25px; /* Spacing between links */
+  }
+
+  .mobile-nav-links li a {
+    text-decoration: none;
+    color: white; /* White text for mobile menu links */
+    font-size: 24px; /* Larger font size for mobile links */
+    font-weight: 600;
+    display: block; /* Make links block level for full width clickability */
+    padding: 10px 0; /* Add padding for better touch targets */
+  }
+
+  .mobile-nav-links li a:hover {
+    color: #90ee90; /* Light green on hover for mobile links */
+  }
+
   .nav-links {
     display: none; /* Hide desktop nav links on smaller screens */
   }

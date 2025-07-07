@@ -366,6 +366,7 @@
     font-size: 30px;
     line-height: auto;
     letter-spacing: -0.3px;
+  
   }
 
   .card-content p {
@@ -407,6 +408,7 @@
     right: -180px;
     left: auto;
     display: block; /* Ensure visible */
+    
   }
 
   .blob-group.group-bottom-left {
@@ -427,13 +429,13 @@
     padding-top: 50px; /* Increase to push it down */
     text-align: center;
     max-width: 100%;
-    margin: 0 auto 12px auto;
+    margin: 6.5rem auto 5rem auto;
     position: relative;
     z-index: 1;
   }
 
   .section-header h2 {
-    font-size: 5.5rem;
+    font-size: 6rem;
     line-height: 1.05;
     letter-spacing: -1.5px;
     margin-bottom: 2rem;
@@ -445,6 +447,7 @@
     max-width: 520px;
     margin: 2.5rem auto 0 auto;
     padding: 0;
+    text-align: center;
   }
 
   /* Course layout (optional, if used on mobile) */
@@ -459,10 +462,10 @@
     align-items: flex-start;
   }
 
-  .course-title {
-    font-size: 40px;
-    width: 100%;
-  }
+    .course-title {
+      font-size: 40px;
+      width: 100%;
+    }
 
   .course-description {
     font-size: 14px;
@@ -495,6 +498,7 @@
     height: 200px; /* Enough space to contain the coins above the heading */
     margin-bottom: -30px; /* Pull section header up */
     margin-top: -80px;
+    margin-left: 6rem;
   }
 
   /* Shared Coin Style */
