@@ -2,12 +2,18 @@ import React from "react";
 import "./Courses.css";
 import Navbar from "./Navbar";
 import logoImg from "../img/Coin.png";
+import Yes3 from "../img/Yes3.png";
+import './LandingPage.css';
 
-const cardData = [
-  { id: 1, delay: "264px" },
-  { id: 2, delay: "132px" },
-  { id: 3, delay: "0px" },
-];
+
+import ContactForm from "./ContactForm";
+import Footer from "./Footer";
+
+// const cardData = [
+//   { id: 1, delay: "264px" },
+//   { id: 2, delay: "132px" },
+//   { id: 3, delay: "0px" },
+// ];
 
 const courses = [
   {
@@ -139,11 +145,18 @@ const Courses = () => {
             </div>
           ))}
         </div>
-
         <div className="logo-wrapper">
           <img src={logoImg} alt="Logo" />
         </div>
       </section>
+      <section className="contact-form-section">
+        <div className="imageNearBy">
+          <img src={Yes3} alt="Yes" />
+        </div>
+        <ContactForm />
+      </section>
+
+      <Footer />
     </div>
   );
 };

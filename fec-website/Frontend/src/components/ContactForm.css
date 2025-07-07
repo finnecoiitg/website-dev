@@ -1,0 +1,173 @@
+
+/* Base styles - Mobile First */
+.contact-form-container {
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #E0FFE0;
+  width: 90vw; /* Start with wider width for mobile */
+  max-width: 500px; /* Prevent it from getting too wide on very large phones */
+  padding: 20px;
+  margin: 20px auto; /* Center the form horizontally */
+}
+
+.contact-form-text-container {
+  width: 100%; /* Full width for text container on mobile */
+  text-align: center;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.contact-form-text-container p {
+  margin: 10px 0; /* Adjust margin for mobile */
+  font-size: 0.95rem; /* Slightly smaller font for mobile paragraphs */
+}
+
+.contact-form-fields-container {
+  width: 100%; /* Full width for fields container on mobile */
+  position: relative;
+  padding: 0; /* Remove horizontal padding on mobile, it's handled by container padding */
+}
+
+.contact-form-title {
+  font-weight: 400;
+  color: #000000;
+  line-height: 1.15;
+  margin-bottom: 1rem;
+  font-size: 1.75rem; /* Smaller font size for mobile titles */
+  width: 100%; /* Full width for title on mobile */
+  text-align: center; /* Center title on mobile */
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-label {
+  display: block;
+  font-size: 1rem; /* Adjust label font size for mobile */
+  font-weight: 500;
+  color: #1E4B4C;
+  text-align: left;
+}
+
+.form-input,
+.form-textarea {
+  margin-top: 0.25rem;
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #3A6B6B;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  background-color: transparent;
+  color: #1E4B4C;
+  font-size: 1rem; /* Ensure input text is readable on mobile */
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: 3px solid #89FF8B;
+  border-color: #89FF8B;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 0.75rem 2rem;
+  background-color: #89FF8B;
+  color: #1E4B4C;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem; /* Adjust button font size for mobile */
+}
+
+.submit-button:hover {
+  background-color: #6edc6e;
+}
+
+.submit-button span {
+  margin-left: 0.5rem;
+}
+
+
+/* --- Media Queries --- */
+
+/* Tablet and Small Laptop Screens */
+@media (min-width: 768px) {
+  .contact-form-container {
+    width: 60vw; /* Wider for tablets */
+    max-width: 600px; /* Limit max width */
+    padding: 30px; /* More padding */
+  }
+
+  .contact-form-text-container {
+    width: 90%; /* Adjust width for larger screens */
+  }
+
+  .contact-form-text-container p {
+    font-size: 1rem; /* Restore original font size */
+  }
+
+  .contact-form-fields-container {
+    padding: 0 15px; /* Restore original horizontal padding */
+  }
+
+  .contact-form-title {
+    font-size: 2rem; /* Larger font size for tablet titles */
+    width: 85%; /* Adjust width for title */
+    text-align: left; /* Align title to left */
+  }
+
+  .form-label {
+    font-size: 1.125rem; /* Restore original label font size */
+  }
+
+  .form-input,
+  .form-textarea {
+    font-size: 1.125rem; /* Adjust input font size */
+  }
+
+  .submit-button {
+    font-size: 1.125rem; /* Adjust button font size */
+  }
+}
+
+/* Larger Laptop and Desktop Screens */
+@media (min-width: 1024px) {
+  .contact-form-container {
+    width: 40vw; /* Original width for large screens */
+    max-width: 700px; /* Optional: set a new max-width for very large screens */
+    padding: 20px; /* Restore original padding */
+  }
+
+  .contact-form-text-container {
+    width: 86%; /* Restore original width */
+  }
+
+  .contact-form-fields-container {
+    width: 90%; /* Restore original width */
+    padding: 0 15px; /* Restore original padding */
+  }
+
+  .contact-form-title {
+    font-size: 2.25rem; /* Original font size */
+    width: 75%; /* Original width */
+  }
+}
+
+/* Even Larger Screens (Optional) */
+@media (min-width: 1440px) {
+  .contact-form-container {
+    width: 35vw; /* Slightly narrower on ultra-wide screens */
+    max-width: 800px;
+  }
+}
