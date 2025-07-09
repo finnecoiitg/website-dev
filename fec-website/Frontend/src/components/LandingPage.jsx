@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './LandingPage.css';
 
 import CountUp from 'react-countup';
@@ -23,6 +23,29 @@ import DiscoverPotential from './DiscoverPotential';
 import ContactForm from './ContactForm'; 
 
 const LandingPage = () => {
+  useEffect(() => {
+    const scrollers = document.querySelectorAll(".scroller");
+
+    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      addAnimation();
+    }
+
+    function addAnimation() {
+      scrollers.forEach((scroller) => {
+        scroller.setAttribute("data-animated", true);
+
+        const scrollerInner = scroller.querySelector(".scroller__inner");
+        const scrollerContent = Array.from(scrollerInner.children);
+
+
+        scrollerContent.forEach((item) => {
+          const duplicatedItem = item.cloneNode(true);
+          duplicatedItem.setAttribute("aria-hidden", true);
+          scrollerInner.appendChild(duplicatedItem);
+        });
+      });
+    }
+  }, []);
   return (
     <div className="landing-page-container">
       <Navbar />
@@ -136,6 +159,7 @@ const LandingPage = () => {
                 </div>
               </div>
             </div>
+            
             {/* Repeat .testimonial-card for each testimonial */}
             <div className="testimonial-card">
               <p>Live data plays a big role in my design
@@ -185,51 +209,55 @@ const LandingPage = () => {
             Our expanding network<br />of ecosystems
           </h2>
           {/* First row (always visible) */}
-          <div className="ecosystem-logos-row ecosystem-row-main">
-            <div className="ecosystem-logo-item">
-              <img src={Frame3652} alt="Mudrex" />
-            </div>
-            <div className="ecosystem-logo-item">
-              <img src={Frame3653} alt="Worldquant" />
-            </div>
-            <div className="ecosystem-logo-item">
-              <img src={Frame3654} alt="Upsurge" />
-            </div>
-            <div className="ecosystem-logo-item">
-              <img src={Frame3655} alt="Nobias" />
-            </div>
-            <div className="ecosystem-logo-item">
-              <img src={Frame3656} alt="The Product House" />
-            </div>
-            <div className="ecosystem-logo-item">
-              <img src={Frame3657} alt="Finalytics" />
-            </div>
-            <div className="ecosystem-logo-item binance-mobile-only">
-              <img src={Binance} alt="Binance" />
+          <div className="ecosystem-logos-row ecosystem-row-main scroller" data-direction="left">
+            <div className="scroller__inner">
+              <div className="ecosystem-logo-item">
+                <img src={Frame3652} alt="Mudrex" />
+              </div>
+              <div className="ecosystem-logo-item">
+                <img src={Frame3653} alt="Worldquant" />
+              </div>
+              <div className="ecosystem-logo-item">
+                <img src={Frame3654} alt="Upsurge" />
+              </div>
+              <div className="ecosystem-logo-item">
+                <img src={Frame3655} alt="Nobias" />
+              </div>
+              <div className="ecosystem-logo-item">
+                <img src={Frame3656} alt="The Product House" />
+              </div>
+              <div className="ecosystem-logo-item">
+                <img src={Frame3657} alt="Finalytics" />
+              </div>
+              <div className="ecosystem-logo-item binance-mobile-only">
+                <img src={Binance} alt="Binance" />
+              </div>
             </div>
           </div>
           {/* Second row (repeats some items, only visible on desktop/laptop) */}
-          <div className="ecosystem-logos-row ecosystem-row-desktop">
-            <div className="ecosystem-logo-item">
-              <img src={Frame3652} alt="Mudrex" />
-            </div>
-            <div className="ecosystem-logo-item">
-              <img src={Frame3653} alt="Worldquant" />
-            </div>
-            <div className="ecosystem-logo-item">
-              <img src={Frame3654} alt="Upsurge" />
-            </div>
-            <div className="ecosystem-logo-item">
-              <img src={Frame3655} alt="Nobias" />
-            </div>
-            <div className="ecosystem-logo-item">
-              <img src={Frame3656} alt="The Product House" />
-            </div>
-            <div className="ecosystem-logo-item">
-              <img src={Frame3657} alt="Finalytics" />
-            </div>
-            <div className="ecosystem-logo-item">
-              <img src={Frame3658} alt="GrowJunction" />
+          <div className="ecosystem-logos-row ecosystem-row-desktop scroller" data-direction="right">
+            <div className="scroller__inner">
+              <div className="ecosystem-logo-item">
+                <img src={Frame3652} alt="Mudrex" />
+              </div>
+              <div className="ecosystem-logo-item">
+                <img src={Frame3653} alt="Worldquant" />
+              </div>
+              <div className="ecosystem-logo-item">
+                <img src={Frame3654} alt="Upsurge" />
+              </div>
+              <div className="ecosystem-logo-item">
+                <img src={Frame3655} alt="Nobias" />
+              </div>
+              <div className="ecosystem-logo-item">
+                <img src={Frame3656} alt="The Product House" />
+              </div>
+              <div className="ecosystem-logo-item">
+                <img src={Frame3657} alt="Finalytics" />
+              </div>
+              <div className="ecosystem-logo-item">
+                <img src={Frame3658} alt="GrowJunction" />
+              </div>
             </div>
           </div>
         </section>
