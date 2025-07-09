@@ -3,7 +3,7 @@ import LandingPage from './components/LandingPage';
 import { Routes, Route } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop';
 import Courses from './components/Courses';
-import DiscoverPotential from './components/DiscoverPotential';
+// import DiscoverPotential from './components/DiscoverPotential';
 // import About from './components/About';
 // import Faqs from './components/Faqs';
 // import Contact from './components/Contact';

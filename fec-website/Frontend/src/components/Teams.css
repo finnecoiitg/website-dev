@@ -184,8 +184,8 @@ p {
         gap: 16px;
     }
     .card {
-        flex: 0 0 80vw;
-        max-width: 90vw;
+        flex: 0 0 90%;
+        max-width: 400px;
     }
 }
 

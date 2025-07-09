@@ -1,26 +1,24 @@
-
 /* Base styles - Mobile First */
 .contact-form-container {
   background-color: white;
   border-radius: 1rem;
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
   border: 1px solid #E0FFE0;
-  width: 90vw; /* Start with wider width for mobile */
-  max-width: 500px; /* Prevent it from getting too wide on very large phones */
+  width: 90vw; 
+  max-width: 500px; 
   padding: 20px;
-  margin: 20px auto; /* Center the form horizontally */
 }
 
 .contact-form-text-container {
-  width: 100%; /* Full width for text container on mobile */
+  width: 100%; 
   text-align: center;
   padding: 0;
   margin-bottom: 20px;
 }
 
 .contact-form-text-container p {
-  margin: 10px 0; /* Adjust margin for mobile */
-  font-size: 0.95rem; /* Slightly smaller font for mobile paragraphs */
+  margin: 10px 0; 
+  font-size: 0.95rem; 
 }
 
 .contact-form-fields-container {
@@ -59,6 +57,7 @@
   display: block;
   width: 100%;
   padding: 0.75rem 1rem;
+  box-sizing: border-box;
   border: 1px solid #3A6B6B;
   border-radius: 0.75rem;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);

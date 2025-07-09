@@ -3,6 +3,8 @@ import "./IntroductoryOptions.css";
 import Navbar from "./Navbar";
 import imag from "../img/image.png";
 
+import { Link } from "react-router-dom";
+
 const IntroductoryOptions = () => {
   return (
     <div className="intro-wrapper">
@@ -186,9 +188,9 @@ const IntroductoryOptions = () => {
                 <div className="mentor-details">
                   <h3>Europe Street beat</h3>
                   <p>Designation</p>
-                  <a className="linkedin-button" href="#">
+                  <Link className="linkedin-button" to="#">
                     LinkedIn ↗
-                  </a>
+                  </Link>
                 </div>
               </div>
             ))}

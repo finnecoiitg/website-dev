@@ -13,7 +13,6 @@ const Navbar = () => {
     { label: "BLOGS", path: "/blogs" },
     { label: "RESOURCES", path: "/resources" },
     { label: "CONTACT US", path: "/contact" },
-    { label: "ALUMNI CORNER", path: "/alumni" }
   ];
 
   return (
