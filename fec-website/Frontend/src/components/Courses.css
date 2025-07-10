@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+  overflow-x: hidden; /* Ensure no horizontal scroll globally */
+}
 /* === Main Section === */
 .courses-section {
   position: relative;
@@ -9,11 +13,11 @@
 
 /* === Blob Group Base === */
 .coin {
-    position: absolute;
-    object-fit: contain;
-    z-index: 2;
-    display: none;
-  }
+  position: absolute;
+  object-fit: contain;
+  z-index: 2;
+  display: none;
+}
 .blob-group {
   position: absolute;
   pointer-events: none;
@@ -133,7 +137,8 @@
 .course-title {
   width: 307px;
   font-family: "Formular", sans-serif;
-  font-size: 33px;
+  font-weight: 200 !important;
+  font-size: 35px !important;
   line-height: 40px;
   letter-spacing: -0.6px;
   color: #000;
@@ -165,14 +170,15 @@
 /* === Benefits Section === */
 .benefits-container {
   position: relative;
-  max-width: 100%;
-  margin-inline: 200px;
-  margin-top: 60px;
-  padding: 20px;
+  width: 100%;
+  padding: 60px 200px 60px 200px;
+  box-sizing: border-box;
   font-family: "Formular", sans-serif;
   color: #131313;
-  padding-bottom: 200px; /* Space for logo */
   z-index: 1;
+  background-color: #f5f5f5;
+  overflow: hidden;
+  padding-bottom: 10rem;
 }
 
 .benefits-header h2 {
@@ -196,7 +202,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 32px;
-  margin-top: 60px;
+  margin-top: -50px;
 }
 
 .benefit-card {
@@ -214,6 +220,7 @@
   align-items: center;
   width: 8px;
   height: 100%;
+  transform: rotate(180deg);
 }
 
 .dashed-line {
@@ -226,10 +233,10 @@
 .dot {
   width: 8px;
   height: 8px;
-  background: #004a3c;
+  background: #004A3C !important;
   border-radius: 50%;
   margin-top: 4px;
-}
+} 
 
 .card-content {
   display: flex;
@@ -269,11 +276,10 @@
 .logo-wrapper {
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: 15rem;
   z-index: 0;
   opacity: 0.6;
   pointer-events: none;
-  padding: 20px;
 }
 
 .logo-wrapper img {
@@ -284,6 +290,11 @@
 }
 
 @media (max-width: 767px) {
+  html,
+  body {
+    overflow-x: hidden;
+    width: 100%;
+  }
   /* Benefits Section Mobile Styles */
   .benefits-container {
     margin-top: 0px;
@@ -291,6 +302,11 @@
     padding: 32px 16px;
     padding-bottom: 120px;
     background-color: rgba(26, 26, 26, 0.1);
+    overflow-x: hidden; /* Prevent horizontal scroll here too */
+    width: 100%; /* Ensure width doesn't exceed viewport */
+    box-sizing: border-box;
+    z-index: 10;
+    background: #f5f5f5;
   }
 
   .benefits-header h2 {
@@ -366,7 +382,6 @@
     font-size: 30px;
     line-height: auto;
     letter-spacing: -0.3px;
-  
   }
 
   .card-content p {
@@ -392,6 +407,7 @@
     align-items: center;
   }
 
+
   .blob-group.group-top-left {
     width: 243px;
     height: 255px;
@@ -408,7 +424,6 @@
     right: -180px;
     left: auto;
     display: block; /* Ensure visible */
-    
   }
 
   .blob-group.group-bottom-left {
@@ -462,10 +477,10 @@
     align-items: flex-start;
   }
 
-    .course-title {
-      font-size: 40px;
-      width: 100%;
-    }
+  .course-title {
+    font-size: 40px;
+    width: 100%;
+  }
 
   .course-description {
     font-size: 14px;
@@ -540,6 +555,6 @@
     transform: rotate(12deg);
   }
   .page-wrapper {
-  padding-top: 0%; 
-}
+    padding-top: 0%;
+  }
 }
