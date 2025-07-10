@@ -3,6 +3,7 @@ import LandingPage from './components/LandingPage';
 import { Routes, Route } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop';
 import Courses from './components/Courses';
+import Events from './components/Events';
 // import DiscoverPotential from './components/DiscoverPotential';
 // import About from './components/About';
 // import Faqs from './components/Faqs';
@@ -16,6 +17,7 @@ function App() {
     <Routes>
       <Route path="/" element={<LandingPage />} />
       <Route path="/courses" element={<Courses />} />
+      <Route path="/events" element={<Events />} />
       {/* <Route path="/about" element={<About />} /> */}
       {/* <Route path="/faqs" element={<Faqs />} /> */}
       {/* <Route path="/contact" element={<Contact />} /> */}
