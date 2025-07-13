@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+  overflow-x: hidden; /* Ensure no horizontal scroll globally */
+}
 .intro-wrapper {
   display: flex;
   flex-direction: column;
@@ -185,7 +189,8 @@
   letter-spacing: 1px;
 }
 
-.access-button {
+.access-button,
+.register-button {
   padding: 12px 24px;
   border: 2px solid #1f4c42;
   border-radius: 8px;
@@ -197,13 +202,33 @@
   letter-spacing: 1px;
   cursor: pointer;
   transition: all 0.3s ease;
-  width: 20rem;
-  margin-left: -70px;
+  width: 13rem;
+  z-index: 4;
 }
 
+.access-button {
+  width: 15rem;
+}
+
+.register-button {
+  background-color: #004a3c;
+  color: #7affa1;
+}
+.register-button:hover {
+  background-color: white;
+  color: #1f4c42;
+}
 .access-button:hover {
   background-color: #1f4c42;
   color: white;
+}
+
+.button-row {
+  display: flex;
+  gap: 1.5rem;
+  margin-left: -70px; /* Apply offset to the row only */
+  margin-top: 1rem;
+  flex-wrap: wrap;
 }
 
 .arrow {
@@ -211,7 +236,8 @@
   transition: transform 0.3s ease;
 }
 
-.access-button:hover .arrow {
+.access-button:hover .arrow,
+.register-button:hover .arrow {
   transform: translateX(4px);
 }
 
@@ -333,6 +359,7 @@
   width: 100%;
   padding: 0 1rem;
   margin-bottom: 17rem;
+  margin-top: 5rem;
 }
 
 .course-flex-container {
@@ -413,6 +440,7 @@
   justify-content: center;
   margin-inline: auto;
   font-size: 18px;
+  font-weight: 600;
 }
 
 /* === Background Blobs === */
@@ -490,8 +518,8 @@
   width: 90%;
   max-width: 1200px;
   font-family: "Formular", sans-serif;
-  position: relative;   /* Add this */
-  z-index: 5;   
+  position: relative; /* Add this */
+  z-index: 5;
 }
 
 /* === Heading === */
@@ -501,7 +529,7 @@
   margin-bottom: 2.5rem;
   text-align: left;
   font-weight: 500;
-  margin-left:3rem;
+  margin-left: 3rem;
   margin-top: 0rem;
 }
 
@@ -570,4 +598,229 @@
 .linkedin-button:hover {
   background-color: #0e0f0c;
   color: white;
+}
+
+@media (max-width: 767px) {
+  html,
+  body {
+    overflow-x: hidden !important;
+    max-width: 100%;
+  }
+
+  .option-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  .option-image {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+
+  .option-text {
+    margin-left: 0;
+    margin-top: 2rem;
+    max-width: 100%;
+  }
+
+  .option-text h2 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .option-text p {
+    margin-top: 20px;
+    font-size: 15.5px;
+    line-height: 24px;
+  }
+
+  .mentors-section {
+    padding: 3rem 1rem;
+    width: 95%;
+    margin: 2rem auto;
+    border-radius: 0;
+  }
+
+  .mentors-heading {
+    font-size: 2rem;
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 2rem;
+  }
+
+  .mentors-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+    gap: 1.2rem;
+    justify-items: center;
+  }
+
+  .mentor-card {
+    max-width: 160px;
+  }
+
+  .mentor-details h3 {
+    font-size: 0.95rem;
+  }
+
+  .mentor-details p {
+    font-size: 0.8rem;
+  }
+
+  .linkedin-button {
+    font-size: 0.75rem;
+    padding: 5px 10px;
+  }
+
+  .course-activities {
+    width: fit-content; /* shrink to fit its children */
+    margin-left: auto; /* center horizontally */
+    margin-right: 2rem;
+  }
+  .activity-card {
+    background-color: #9effa9;
+    border-radius: 15px;
+    padding: 2rem 1rem;
+    flex: 1 1 calc(33.33% - 1.5rem); /* Ensures 3 equal-width cards with gap */
+    min-width: 150px; /* Optional minimum width */
+    max-width: 160px; /* Optional max width */
+    text-align: center;
+    color: #0e0f0c;
+    font-weight: 500;
+    transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 190px; /* ✅ Set equal height */
+  }
+  .circle-arrow {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #0e0f0c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-inline: auto;
+    font-size: 18px;
+  }
+
+  .about-course {
+    width: 75%;
+  }
+  .intro-section {
+    padding: 3rem 0rem;
+    overflow-x: hidden;
+  }
+
+  .intro-top-row {
+    text-align: center;
+    margin-bottom: 0rem;
+  }
+
+  .introductory {
+    font-size: 3.5rem;
+    margin-left: 0;
+    letter-spacing: 1px;
+  }
+
+  .intro-bottom-row {
+    flex-direction: column;
+    align-items: start;
+    gap: 0rem;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    margin-top: 0rem;
+  }
+
+  .options-wrapper {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    margin-left: 0rem;
+  }
+
+  .options {
+    font-size: 3.5rem;
+    font-weight: 500;
+    margin: 0 0 1.5rem 0;
+    color: #0e0f0c;
+  }
+
+
+  .options-wrapper p {
+    font-size: 1rem;
+    line-height: 1.6;
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto 2rem auto;
+    text-align: left;
+    color: #333;
+    padding: 0 0.5rem;
+    overflow-wrap: break-word;
+    z-index: 5;
+  }
+
+  .button-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centers buttons horizontally */
+    justify-content: center;
+    gap: 1rem;
+    margin: 1.5rem auto 0 auto; /* center the entire row */
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .register-button,
+  .access-button {
+    width: 100%;
+    max-width: 260px;
+    text-align: center;
+    padding: 0.75rem 1.25rem;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    box-sizing: border-box;
+  }
+
+  .register-button {
+    background-color: #064e3b;
+    color: #ffffff;
+    border: none;
+  }
+
+  .access-button {
+    background-color: white;
+    color: #0f0f0f;
+    border: 1.5px solid #ccc;
+  }
+
+  .arrow {
+    margin-left: 0.25rem;
+    transition: transform 0.3s ease;
+  }
+
+  .register-button:hover .arrow,
+  .access-button:hover .arrow {
+    transform: translateX(4px);
+  }
+
+  .group-bottom-left {
+    display: none !important;
+  }
+
+  .coins-wrapper{
+    display: none;
+  }
 }
