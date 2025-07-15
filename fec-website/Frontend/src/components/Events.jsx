@@ -4,6 +4,9 @@ import HeaderImg2 from '../img/events/header2.png';
 import HeaderImg3 from '../img/events/header3.png';
 import OngoingImg from '../img/events/ongoing.png';
 import Yes3 from '../img/Yes3.png';
+import img1 from '../img/events/image79.png';
+import img2 from '../img/events/image80.png';
+import img3 from '../img/events/image 354.png';
 import DiscImg from '../img/events/image 6.png'
 import Navbar from "./Navbar";
 import UpcomingEvents from './UpcomingEvents'
@@ -25,7 +28,15 @@ export default function Events() {
             <img className="fec-logo3" src={HeaderImg3} alt="Events Header" />
         </div>
         <div className="ongoing-events">
-            <img src={OngoingImg} alt="" />
+            <div className="hero-banner">
+              <div className="hero-text">
+                <h1>Gear up for MNAnalyse<br />- a case study analysis competition</h1>
+                <button className="hero-button">REGISTER <span>→</span></button>
+              </div>
+              <div className="hero-image">
+                <img src={img3} alt="MNAnalyse" />
+              </div>
+            </div>
         </div>
         <div className="upcoming-events">
             <div className="up-p">Find your inspiration at our engaging events</div>
@@ -45,10 +56,12 @@ export default function Events() {
                   <p className="expEve-para2">Explore more of our courses</p>
                   <button type="Submit" className="exploreBtn">Explore Courses <span>→</span></button>
                 </div>
-                <div className="greybox"></div>
+                <div className="greybox">
+                  <img className="expEve-img" src={img1} alt="Yes" />
+                </div>
               </div>
               <div className="expEve-vert">
-                <div className="greybox"></div>
+                <div className="greybox"><img className="expEve-img" src={img2} alt="Yes" /></div>
                 <div className="eveText">
                   <p className="expEve-para1">Effortlessly tackle time-consuming computing tasks</p>
                   <p className="expEve-para2">Get ahead with our resources</p>

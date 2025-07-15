@@ -50,15 +50,77 @@ body{
     margin: 60px 0;
     width: 100%;
 }
-.ongoing-events img{
-    width: 80%;
-    height: auto;
-    max-width: 1500px;
-    border-radius: 10px;
-    border-top-right-radius: 50px;
-    border-bottom-left-radius: 50px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.hero-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #004d40; /* dark green shade */
+  border-radius: 15px 80px;
+  padding: 40px;
+  color: #b0ffc2; /* light green text */
+  max-width: 1200px;
+  width: 80%;
 }
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #b0ffc2;
+  margin-bottom: 80px;
+  font-family: "Formular", sans-serif;
+}
+
+.hero-button {
+  background-color: #b0ffc2;
+  color: #004d40;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 0.8rem;
+  font-family: "Formular", sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: #61e981;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Make it stack on small screens */
+@media (max-width: 768px) {
+  .hero-text h1{
+    margin-bottom: 30px;
+    margin-top: 0px;
+  }
+  .hero-text{
+    margin-bottom: 20px;
+  }
+  .hero-banner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image {
+    margin-top: 20px;
+  }
+}
+
 .events-list{
     display: flex;
     flex-wrap: wrap;
@@ -113,7 +175,6 @@ body{
 .expEve-vert{
     flex: 1 1 450px;
     width: 50%;
-    height: 500px;
     max-width: 500px;
     min-width: 400px;
     display: flex;
@@ -122,10 +183,13 @@ body{
     gap: 0;
 }
 .greybox{
-    background-color: rgba(217, 217, 217, 1);
-    flex: 1;
+    background:none;
     width: 90%;
     margin: 5px 0;
+    border-radius: 10px;
+}
+.greybox img{
+    width: 100%;
     border-radius: 10px;
 }
 .eveText{
@@ -174,17 +238,17 @@ body{
     height: 100%;
     width: 80%;
     padding: 0 30px;
+    gap: 30px;
     border-radius: 10px 50px 10px 50px;
     background-color: rgba(162, 255, 182, 1);
 }
 .disc-vert{
     height: 100%;
     width: 50%;
-    margin-right: 100px;
 }
 .disc-para1{
     font-size: 18px;
-    width: 200px;
+    width: 300px;
     color: black;
     margin: 40px 0 20px 0;
 }
@@ -223,7 +287,7 @@ body{
   margin-right: 40px;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
   .disc-img {
     display: none;
   }
@@ -236,9 +300,15 @@ body{
     margin-left: 40px ;
   }
 }
-@media (max-width: 590px){
+@media (max-width: 650px){
     .discover-events{
         height: 300px;
+    }
+    .greybox img{
+        display: none;
+    }
+    .greybox{
+        height: 0;
     }
     .up-p{
         font-size: 38px;
