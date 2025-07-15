@@ -16,8 +16,9 @@ body {
   position: absolute;
   object-fit: contain;
   z-index: 2;
-  display: none;
+  display: none !important;
 }
+
 .blob-group {
   position: absolute;
   pointer-events: none;
