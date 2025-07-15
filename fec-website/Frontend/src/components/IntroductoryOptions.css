@@ -1,0 +1,826 @@
+body {
+  margin: 0;
+  overflow-x: hidden; /* Ensure no horizontal scroll globally */
+}
+.intro-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  font-family: "Formular", sans-serif;
+  background: white;
+  overflow-x: hidden;
+}
+
+/* === Intro Options / Blobs === */
+.intro-options {
+  position: relative;
+  width: 100%;
+  padding: 4rem 2rem;
+  margin-bottom: 10%;
+}
+
+.blob-group {
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.ellipse {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.ellipse-blur {
+  width: 100%;
+  height: 100%;
+  background: #a3ffb8;
+  opacity: 0.5;
+  filter: blur(40px);
+}
+
+.ellipse-gradient {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    311.46deg,
+    #b0ffc2 17.03%,
+    rgba(176, 255, 194, 0) 79.45%
+  );
+}
+
+.ellipse-texture {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  mix-blend-mode: overlay;
+  border-radius: 600px;
+  opacity: 0.3;
+}
+
+.group-top-left {
+  width: 243px;
+  height: 255px;
+  top: -60px;
+  left: 200px;
+}
+
+.group-top-right {
+  width: 600px;
+  height: 600px;
+  top: 91px;
+  right: -100px;
+}
+
+.group-bottom-left {
+  width: 520px;
+  height: 520px;
+  left: -60px;
+  top: 800px;
+}
+
+/* === Intro Content Structure === */
+.intro-section {
+  width: 100%;
+  padding: 4rem 3rem;
+  font-family: "Formular", sans-serif;
+  background-color: white;
+  overflow-x: hidden;
+}
+
+.intro-top-row {
+  text-align: left;
+  margin-bottom: 0rem;
+  position: relative;
+  z-index: 2;
+}
+
+.introductory {
+  font-size: 90px;
+  font-weight: 400;
+  color: #0e0f0c;
+  margin: 0;
+  position: relative;
+  z-index: 3;
+  margin-left: 19rem;
+  letter-spacing: 2px;
+}
+
+.intro-bottom-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  overflow-y: hidden;
+}
+
+.options {
+  z-index: 3;
+  letter-spacing: 2px;
+}
+
+/* === Coins === */
+.coins-wrapper {
+  position: relative;
+  width: 500px;
+  height: 350px;
+  flex-shrink: 0;
+  flex: 0 0 35%;
+  margin-bottom: 50px;
+}
+
+.coin {
+  position: absolute;
+  object-fit: contain;
+  z-index: 2;
+}
+
+.rotat2 {
+  width: 100px;
+  top: 200px;
+  left: 250px;
+  transform: translateX(-50%);
+}
+
+.coin4-left {
+  width: 450px;
+  top: 0;
+  left: -200px;
+  transform: rotate(-30deg);
+  filter: blur(0.6px);
+  z-index: 3;
+}
+
+.coin4-rotated {
+  width: 180px;
+  top: 40px;
+  left: 90px;
+  transform: rotate(12deg);
+  z-index: 2;
+}
+
+/* === Options + Description === */
+.options-wrapper {
+  flex: 1;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex: 0 0 60%;
+}
+
+.options {
+  font-size: 90px;
+  font-weight: 400;
+  margin: 0 0 30px -70px;
+  color: #0e0f0c;
+}
+
+.options-wrapper p {
+  font-size: 18px;
+  line-height: 1.6;
+  width: 350px;
+  color: #0e0f0c;
+  margin-top: 2.5rem;
+  margin-left: -70px;
+  letter-spacing: 1px;
+}
+
+.access-button,
+.register-button {
+  padding: 12px 24px;
+  border: 2px solid #1f4c42;
+  border-radius: 8px;
+  background-color: white;
+  color: #1f4c42;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 13rem;
+  z-index: 4;
+}
+
+.access-button {
+  width: 15rem;
+}
+
+.register-button {
+  background-color: #004a3c;
+  color: #7affa1;
+}
+.register-button:hover {
+  background-color: white;
+  color: #1f4c42;
+}
+.access-button:hover {
+  background-color: #1f4c42;
+  color: white;
+}
+
+.button-row {
+  display: flex;
+  gap: 1.5rem;
+  margin-left: -70px; /* Apply offset to the row only */
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.arrow {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.access-button:hover .arrow,
+.register-button:hover .arrow {
+  transform: translateX(4px);
+}
+
+/* === About Course Section === */
+.about-course {
+  background-color: #00463e;
+  border-radius: 20px 50px 20px 50px;
+  padding: 2rem;
+  color: #baffc5;
+  margin: 3rem 1rem;
+  width: 90%;
+  max-width: 1200px;
+  z-index: 2;
+}
+
+.about-course h2 {
+  font-size: 34px;
+  margin-bottom: 1.5rem;
+}
+
+.course-points {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.point {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  max-width: 300px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #a3ffb8;
+  border-radius: 50%;
+  margin-top: 6px;
+  flex-shrink: 0;
+}
+
+.point p {
+  color: #c3fbd8;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+/* === Option Derivative Section === */
+.option-derivative {
+  background-color: #f5f5f5;
+  width: 100%;
+  padding: 3rem 1rem;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+}
+
+.option-wrapper {
+  display: flex;
+  gap: 2rem;
+  max-width: 1200px;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.option-image {
+  width: 419px;
+  height: 322px;
+  background-color: #d9d9d9;
+  border-radius: 4px;
+}
+
+.option-text {
+  max-width: 567px;
+  color: #0e0f0c;
+  margin-left: 5rem;
+}
+
+.option-text h2 {
+  font-weight: 400;
+  font-size: 46.87px;
+  line-height: 48px;
+  letter-spacing: -0.96px;
+  margin-bottom: 10px;
+}
+
+.option-text p {
+  margin-top: 40px;
+  font-size: 17.5px;
+  line-height: 25px;
+  color: #52525b;
+}
+
+/* === Main Section === */
+.course-material-section {
+  position: relative;
+  width: 100%;
+  padding: 4rem 2rem;
+  background: white;
+  font-family: "Formular", sans-serif;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.course-title {
+  font-size: 48px;
+  font-weight: 600;
+  color: #0e0f0c;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.course-content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 1rem;
+  margin-bottom: 17rem;
+  margin-top: 5rem;
+}
+
+.course-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.course-days {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  flex: 1 1 300px;
+}
+
+.day-box {
+  border: 1px solid #0e0f0c;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+
+.arrow-down {
+  font-size: 20px;
+}
+
+.course-divider {
+  width: 1px;
+  background-color: #ccc;
+  margin: 0 1rem;
+}
+
+.course-activities {
+  display: flex;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  flex: 1 1 300px;
+  justify-content: flex-start;
+}
+
+.activity-card {
+  background-color: #9effa9;
+  border-radius: 15px;
+  padding: 2rem 1rem;
+  flex: 1 1 120px;
+  min-width: 20px;
+  text-align: center;
+  position: relative;
+  color: #0e0f0c;
+  font-weight: 500;
+  transition: transform 0.2s ease;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.activity-card:hover {
+  transform: scale(1.02);
+}
+
+.circle-arrow {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid #0e0f0c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-inline: auto;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* === Background Blobs === */
+.blob-group {
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.ellipse {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.ellipse-blur {
+  width: 100%;
+  height: 100%;
+  background: #a3ffb8;
+  opacity: 0.5;
+  filter: blur(40px);
+}
+
+.ellipse-gradient {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    311.46deg,
+    #b0ffc2 17.03%,
+    rgba(176, 255, 194, 0) 79.45%
+  );
+}
+
+.ellipse-texture {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  mix-blend-mode: overlay;
+  border-radius: 600px;
+  opacity: 0.3;
+}
+
+.group-top-left {
+  width: 243px;
+  height: 255px;
+  top: 100px;
+  left: 0px;
+}
+
+.group-top-right {
+  width: 600px;
+  height: 600px;
+  top: 300px;
+  right: -100px;
+}
+.group-top-right2 {
+  width: 600px;
+  height: 600px;
+  top: 1500px;
+  right: -100px;
+}
+
+.group-bottom-left {
+  width: 520px;
+  height: 520px;
+  left: -60px;
+  top: 700px;
+}
+
+/* === Mentors Section Wrapper === */
+.mentors-section {
+  background-color: #00463e;
+  padding: 4rem 2rem;
+  border-radius: 20px;
+  margin: 4rem auto;
+  width: 90%;
+  max-width: 1200px;
+  font-family: "Formular", sans-serif;
+  position: relative; /* Add this */
+  z-index: 5;
+}
+
+/* === Heading === */
+.mentors-heading {
+  font-size: 2.5rem;
+  color: #a3ffb8;
+  margin-bottom: 2.5rem;
+  text-align: left;
+  font-weight: 500;
+  margin-left: 3rem;
+  margin-top: 0rem;
+}
+
+/* === Grid Layout === */
+.mentors-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  gap: 2rem;
+  justify-items: center;
+}
+
+/* === Individual Card === */
+.mentor-card {
+  background-color: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  max-width: 280px;
+  transition: transform 0.3s ease;
+}
+
+.mentor-card:hover {
+  transform: translateY(-5px);
+}
+
+/* === Image === */
+.mentor-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* === Text Info === */
+.mentor-details {
+  padding: 1rem;
+  color: #0e0f0c;
+}
+
+.mentor-details h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.mentor-details p {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 1rem;
+}
+
+/* === LinkedIn Button === */
+.linkedin-button {
+  font-size: 0.8rem;
+  padding: 6px 12px;
+  border: 1px solid #0e0f0c;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #0e0f0c;
+  transition: all 0.2s ease;
+}
+
+.linkedin-button:hover {
+  background-color: #0e0f0c;
+  color: white;
+}
+
+@media (max-width: 767px) {
+  html,
+  body {
+    overflow-x: hidden !important;
+    max-width: 100%;
+  }
+
+  .option-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  .option-image {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+
+  .option-text {
+    margin-left: 0;
+    margin-top: 2rem;
+    max-width: 100%;
+  }
+
+  .option-text h2 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .option-text p {
+    margin-top: 20px;
+    font-size: 15.5px;
+    line-height: 24px;
+  }
+
+  .mentors-section {
+    padding: 3rem 1rem;
+    width: 95%;
+    margin: 2rem auto;
+    border-radius: 0;
+  }
+
+  .mentors-heading {
+    font-size: 2rem;
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 2rem;
+  }
+
+  .mentors-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+    gap: 1.2rem;
+    justify-items: center;
+  }
+
+  .mentor-card {
+    max-width: 160px;
+  }
+
+  .mentor-details h3 {
+    font-size: 0.95rem;
+  }
+
+  .mentor-details p {
+    font-size: 0.8rem;
+  }
+
+  .linkedin-button {
+    font-size: 0.75rem;
+    padding: 5px 10px;
+  }
+
+  .course-activities {
+    width: fit-content; /* shrink to fit its children */
+    margin-left: auto; /* center horizontally */
+    margin-right: 2rem;
+  }
+  .activity-card {
+    background-color: #9effa9;
+    border-radius: 15px;
+    padding: 2rem 1rem;
+    flex: 1 1 calc(33.33% - 1.5rem); /* Ensures 3 equal-width cards with gap */
+    min-width: 150px; /* Optional minimum width */
+    max-width: 160px; /* Optional max width */
+    text-align: center;
+    color: #0e0f0c;
+    font-weight: 500;
+    transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 190px; /* ✅ Set equal height */
+  }
+  .circle-arrow {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #0e0f0c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-inline: auto;
+    font-size: 18px;
+  }
+
+  .about-course {
+    width: 75%;
+  }
+  .intro-section {
+    padding: 3rem 0rem;
+    overflow-x: hidden;
+  }
+
+  .intro-top-row {
+    text-align: center;
+    margin-bottom: 0rem;
+  }
+
+  .introductory {
+    font-size: 3.5rem;
+    margin-left: 0;
+    letter-spacing: 1px;
+  }
+
+  .intro-bottom-row {
+    flex-direction: column;
+    align-items: start;
+    gap: 0rem;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    margin-top: 0rem;
+  }
+
+  .options-wrapper {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    margin-left: 0rem;
+  }
+
+  .options {
+    font-size: 3.5rem;
+    font-weight: 500;
+    margin: 0 0 1.5rem 0;
+    color: #0e0f0c;
+  }
+
+
+  .options-wrapper p {
+    font-size: 1rem;
+    line-height: 1.6;
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto 2rem auto;
+    text-align: left;
+    color: #333;
+    padding: 0 0.5rem;
+    overflow-wrap: break-word;
+    z-index: 5;
+  }
+
+  .button-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centers buttons horizontally */
+    justify-content: center;
+    gap: 1rem;
+    margin: 1.5rem auto 0 auto; /* center the entire row */
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .register-button,
+  .access-button {
+    width: 100%;
+    max-width: 260px;
+    text-align: center;
+    padding: 0.75rem 1.25rem;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    box-sizing: border-box;
+  }
+
+  .register-button {
+    background-color: #064e3b;
+    color: #ffffff;
+    border: none;
+  }
+
+  .access-button {
+    background-color: white;
+    color: #0f0f0f;
+    border: 1.5px solid #ccc;
+  }
+
+  .arrow {
+    margin-left: 0.25rem;
+    transition: transform 0.3s ease;
+  }
+
+  .register-button:hover .arrow,
+  .access-button:hover .arrow {
+    transform: translateX(4px);
+  }
+
+  .group-bottom-left {
+    display: none !important;
+  }
+
+  .coins-wrapper{
+    display: none;
+  }
+}

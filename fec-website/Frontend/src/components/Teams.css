@@ -1,0 +1,200 @@
+.akshaya {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow-x: auto;
+    gap: 24px;
+    padding-bottom: 24px;
+    scroll-snap-type: x mandatory;
+}
+
+.card {
+    flex: 0 0 330px; /* Card width */
+    scroll-snap-align: start;
+    margin-left: 0;  /* Remove left margin for better alignment */
+    margin-top: 50px;
+    border-radius: 18.145px 63.507px;
+    border: 1px solid #ABABAB;
+    background: #FFF;
+    height: 517px;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-title {
+    display: flex;
+    margin: 0 30px 30px 30px;
+    transition: border-bottom 1s ease;
+}
+
+.card-body-aks {
+    display: flex;
+    height: 338px;
+    width: 330px;
+    justify-content: left;
+    align-items: start;
+}
+
+.piggy-aks {
+    position: absolute;
+    bottom: 73px;
+    top: 106px;
+    transition: transform 0.6s ease;
+    z-index: 1;
+}
+
+.arrow-circle-aks {
+    display: flex;
+    width: 48px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 24.003px;
+    border: 1.221px solid #004A3C;
+    position: absolute;
+    left: 30px;
+    bottom: 24px;
+    color: #004A3C;
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 3px;
+}
+
+/* Initial state: hidden, moved up, transparent, collapsed */
+.card-text-aks {
+    opacity: 0;
+    transform: translateY(-20px);
+    max-height: 0;
+    overflow: hidden;
+    transition: 
+        opacity 0.4s cubic-bezier(0.4,0,0.2,1),
+        transform 0.4s cubic-bezier(0.4,0,0.2,1),
+        max-height 0.4s cubic-bezier(0.4,0,0.2,1);
+    text-align: left;
+    color: #454745;
+    font-size: 14.733px;
+    font-family: 'Inter', sans-serif, 'Formular';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20.372px;
+    width: 282px;
+    margin: 0px 24px 0px 36px;
+}
+
+/* On hover: visible, moved to place, expanded */
+.card:hover > .card-body-aks .card-text-aks {
+    opacity: 1;
+    transform: translateY(0);
+    max-height: 200px; /* adjust as needed for your text */
+}
+
+.card:hover>.card-title {
+    border-bottom: 1px solid #ABABAB;
+}
+
+.card:hover>.arrow-circle-aks {
+    background-color: #004A3C;
+    color: #7AFFA1;
+}
+
+.card .arrow-circle-aks {
+    transition: background-color 0.11s;
+}
+
+.card:hover .piggy-aks {
+    transform: translate(90px, 150px);
+}
+
+.ellipse1-aks {
+    position: absolute;
+    top: 245px;
+    left: 128px;
+}
+
+.arrow-aks {
+    transition: 0.3s;
+}
+
+p {
+    color: #000;
+    font-size: 31.752px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38.102px;
+    letter-spacing: -0.635px;
+    font-family: 'Inter', sans-serif;
+    text-align: left;
+}
+
+.india>.title-aks>p {
+    color: #0E0F0C;
+    font-size: 46.872px;
+    font-family: 'Inter', sans-serif, 'Formular';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 51.559px;
+    letter-spacing: -0.937px;
+}
+
+.aks-grid-item4 {
+    display: flex;
+}
+
+.pic-aks {
+    border-radius: 50%;
+    height: 40px;
+    margin-right: 10px;
+    margin-left: 8px;
+    overflow: hidden;
+}
+
+.pic-aks img {
+    object-fit: cover;
+    padding-bottom: 10px;
+}
+
+.post-aks {
+    color: #626866;
+    font-size: 13.61px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.info-aks {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Hide scrollbar for aesthetics (optional) */
+.akshaya::-webkit-scrollbar {
+    display: none;
+}
+.akshaya {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;     /* Firefox */
+}
+
+/* Responsive: show 1 card at a time on mobile */
+@media (max-width: 1100px) {
+    .akshaya {
+        gap: 16px;
+    }
+    .card {
+        flex: 0 0 90%;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .akshaya {
+        flex-direction: column;
+    }
+
+    .akshaya>.card {
+        flex-basis: 100%;
+    }
+}

@@ -1,0 +1,329 @@
+@font-face {
+    font-family: Formular;
+    src: url("../img/events/formular-regular-trial.otf") format("opentype");
+}
+body{
+    font-family: "Formular", sans-serif;
+}
+.events-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+}
+.events-header img{
+    position: absolute;
+}
+.events-header h1 {
+    position: absolute;
+    font-family: "Formular", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    font-size: 5rem;
+    text-align: center;
+    z-index: 1;
+}
+.fec-logo1{
+    top: calc(50% + 50px);
+    left: calc(50% - 325px);
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+.fec-logo2{
+    top: calc(50% - 200px);
+    right: calc(50% - 300px);
+    transform: translate(50%, -50%);
+}
+.fec-logo3{
+    top: calc(50% + 100px);
+    right: calc(50% - 300px);
+    transform: translate(-50%, -50%);
+}
+
+.ongoing-events {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 60px 0;
+    width: 100%;
+}
+.hero-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #004d40; /* dark green shade */
+  border-radius: 15px 80px;
+  padding: 40px;
+  color: #b0ffc2; /* light green text */
+  max-width: 1200px;
+  width: 80%;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #b0ffc2;
+  margin-bottom: 80px;
+  font-family: "Formular", sans-serif;
+}
+
+.hero-button {
+  background-color: #b0ffc2;
+  color: #004d40;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 0.8rem;
+  font-family: "Formular", sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: #61e981;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Make it stack on small screens */
+@media (max-width: 768px) {
+  .hero-text h1{
+    margin-bottom: 30px;
+    margin-top: 0px;
+  }
+  .hero-text{
+    margin-bottom: 20px;
+  }
+  .hero-banner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image {
+    margin-top: 20px;
+  }
+}
+
+.events-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+.upcoming-events {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.up-p {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 54px;
+    color: black;
+    margin-bottom: 20px;
+    width: 40%;
+    max-width: 500px;
+    min-width: 300px;
+    margin-left: 10%;
+}
+
+.events-timeline{
+    background-color: rgba(0, 74, 60, 1);
+    color: rgba(122, 255, 161, 1);
+    font-weight: 400;
+    margin-top: 50px;
+    font-family: "Formular", sans-serif;
+}
+.time-text{
+    margin-left: 10%;
+    padding-top: 35px;
+    font-size: 45px;
+}
+.explore-events{
+    margin: 40px 0px;
+    display: flex;
+    justify-content: center;
+}
+.expEve-horiz{
+    width: 80%;
+    max-width: 1000px;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: Row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.expEve-vert{
+    flex: 1 1 450px;
+    width: 50%;
+    max-width: 500px;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 0;
+}
+.greybox{
+    background:none;
+    width: 90%;
+    margin: 5px 0;
+    border-radius: 10px;
+}
+.greybox img{
+    width: 100%;
+    border-radius: 10px;
+}
+.eveText{
+    margin: 15px 0;
+}
+.expEve-para1{
+    width: 60%;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    font-family: "Formular", sans-serif;
+}
+.expEve-para2{
+    width: 80%;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 400;
+    font-family: "Formular", sans-serif;
+}
+.exploreBtn{
+    background-color: white;
+    color: rgba(0, 74, 60, 1);
+    border: 1px solid rgba(0, 74, 60, 1);
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.exploreBtn:hover {
+    background-color: rgba(0, 74, 60, 1);
+    color: white;
+}
+
+.discover-events{
+    height: 250px;
+    display: flex;
+    justify-content: center;
+}
+.disc-hor{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+    padding: 0 30px;
+    gap: 30px;
+    border-radius: 10px 50px 10px 50px;
+    background-color: rgba(162, 255, 182, 1);
+}
+.disc-vert{
+    height: 100%;
+    width: 50%;
+}
+.disc-para1{
+    font-size: 18px;
+    width: 300px;
+    color: black;
+    margin: 40px 0 20px 0;
+}
+.disc-para2{
+    font-size: 32px;
+    color: black;
+    margin-bottom: 30px;
+}
+.discoverBtn{
+    background-color: rgba(0, 74, 60, 1);
+    color: rgba(122, 255, 161, 1);
+    border: none;
+    padding: 15px 30px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.discoverBtn:hover{
+    background-color: white;
+    color: rgba(0, 74, 60, 1);
+    border: 1px solid rgba(0, 74, 60, 1);
+    transition: background-color 0.3s ease;
+}
+.disc-img{
+    height: 70%;
+    border-radius: 5px;
+}
+
+.disc-line{
+  content: "";
+  display: block;
+  width: 1px;
+  background-color: rgba(61, 164, 110, 1); /* same green as border */
+  height: 80%;
+  transform: translate(10%, 0);
+  margin-top: -1px; /* pull up to overlap the button edge */
+  margin-right: 40px;
+}
+
+@media (max-width: 1200px) {
+  .disc-img {
+    display: none;
+  }
+  .disc-line {
+    display: none;
+  }
+  .disc-vert {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 40px ;
+  }
+}
+@media (max-width: 650px){
+    .discover-events{
+        height: 300px;
+    }
+    .greybox img{
+        display: none;
+    }
+    .greybox{
+        height: 0;
+    }
+    .up-p{
+        font-size: 38px;
+    }
+    .explore-events{
+        width: 300px;
+        transform: translate(20%, 0);
+    }
+    .expEve-horiz{
+        width: 60%;
+    }
+    .expEve-para1{
+        font-size: 18px;
+    }
+    .expEve-para2{
+        font-size: 30px;
+    }
+}
