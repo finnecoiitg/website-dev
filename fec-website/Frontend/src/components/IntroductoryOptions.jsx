@@ -6,10 +6,10 @@ import imag from "../img/image.png";
 import { Link } from "react-router-dom";
 
 const IntroductoryOptions = () => {
-  return (
-    <div className="intro-wrapper">
-      <Navbar />
+  return (<>
+   <Navbar />
 
+    <div className="intro-wrapper">
       <section className="intro-options">
         {/* Blob Groups */}
         <div className="blob-group group-top-left">
@@ -37,24 +37,6 @@ const IntroductoryOptions = () => {
           </div>
 
           <div className="intro-bottom-row">
-            {/* Coins on the left */}
-            <div className="coins-wrapper">
-              <img
-                src={require("../img/Rotat2png.png")}
-                alt="coin1"
-                className="coin rotat2"
-              />
-              <img
-                src={require("../img/coin4.png")}
-                alt="coin2"
-                className="coin coin4-left"
-              />
-              <img
-                src={require("../img/coin4.png")}
-                alt="coin3"
-                className="coin coin4-rotated"
-              />
-            </div>
 
             {/* Options text on the right */}
             <div className="options-wrapper">
@@ -64,9 +46,14 @@ const IntroductoryOptions = () => {
                 the fundamentals of Option Derivatives, including pricing,
                 Greeks, hedging, and strategies.
               </p>
-              <button className="access-button">
-                ACCESS MATERIAL <span className="arrow">→</span>
-              </button>
+              <div className="button-row">
+                <button className="register-button">
+                  REGISTER NOW <span className="arrow">→</span>
+                </button>
+                <button className="access-button">
+                  ACCESS MATERIAL <span className="arrow">→</span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -118,19 +105,19 @@ const IntroductoryOptions = () => {
 
       <section className="course-material-section">
         {/* === Blobs in Background === */}
-        <div className="blob-group group-top-left">
+        <div className="blob-group group-top-left blob2">
           <div className="ellipse ellipse-blur"></div>
           <div className="ellipse ellipse-gradient"></div>
           <div className="ellipse ellipse-texture"></div>
         </div>
 
-        <div className="blob-group group-top-right">
+        <div className="blob-group group-top-right blob2">
           <div className="ellipse ellipse-blur"></div>
           <div className="ellipse ellipse-gradient"></div>
           <div className="ellipse ellipse-texture"></div>
         </div>
 
-        <div className="blob-group group-bottom-left">
+        <div className="blob-group group-bottom-left blob2">
           <div className="ellipse ellipse-blur"></div>
           <div className="ellipse ellipse-gradient"></div>
           <div className="ellipse ellipse-texture"></div>
@@ -174,20 +161,19 @@ const IntroductoryOptions = () => {
         </div>
         <section className="mentors-section">
           <h2 className="mentors-heading">Meet your mentors</h2>
+
           <div className="mentors-grid">
             {Array(6)
               .fill(0)
               .map((_, index) => (
                 <div className="mentor-card" key={index}>
-                  <img
-                    src={imag}
-                    alt="Mentor"
-                    className="mentor-image"
-                  />
+                  <img src={imag} alt="Mentor" className="mentor-image" />
                   <div className="mentor-details">
                     <h3>Europe Street beat</h3>
                     <p>Designation</p>
-                    <Link className="linkedin-button" to="#">LinkedIn ↗</Link>
+                    <Link className="linkedin-button" to="#">
+                      LinkedIn ↗
+                    </Link>
                   </div>
                 </div>
               ))}
@@ -195,6 +181,7 @@ const IntroductoryOptions = () => {
         </section>
       </section>
     </div>
+    </>
   );
 };
 

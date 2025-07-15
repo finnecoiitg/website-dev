@@ -1,10 +1,10 @@
 /* Base styles */
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url('../img/Landing_page.png');
+  background-image: url("../img/Landing_page.png");
   background-size: cover;
   background-repeat: repeat-x;
 }
@@ -58,8 +58,8 @@ body {
   padding: 12.55px 13.4px 15.55px 13.4px;
   width: 105.12px;
   height: 42.55px;
-  background-color: #004A3C;
-  color: #55D57A;
+  background-color: #004a3c;
+  color: #55d57a;
   border-radius: 8px;
   cursor: pointer;
   display: flex;
@@ -71,9 +71,9 @@ body {
   padding: 12.55px 13.4px 15.55px 13.4px;
   width: 105.12px;
   height: 42.55px;
-  color: #004A3C;
+  color: #004a3c;
   border-radius: 8px;
-  border: 2px solid #004A3C;
+  border: 2px solid #004a3c;
   background-color: transparent;
   cursor: pointer;
   display: flex;
@@ -102,7 +102,7 @@ body {
   font-weight: 400;
   line-height: 38.102px;
   letter-spacing: -0.635px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .coin_images {
@@ -166,7 +166,6 @@ body {
   font-size: 20px;
 }
 
-
 /* Statistics Section */
 .stats-section {
   max-width: 1200px;
@@ -182,7 +181,8 @@ body {
   text-align: center;
   padding: 2rem;
   border-radius: 1rem;
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 8px 10px -6px rgba(0, 0, 0, 0.1);
   color: black;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
@@ -213,10 +213,11 @@ body {
 }
 
 .join-network-content {
-  background-color: #004A3C;
+  background-color: #004a3c;
   color: white;
   padding: 2rem;
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 8px 10px -6px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -255,7 +256,7 @@ body {
   font-size: 2.25rem;
   font-weight: 400;
   line-height: 1.25;
-  color: #7AFFA1;
+  color: #7affa1;
   display: flex;
   flex-direction: column;
 }
@@ -263,11 +264,12 @@ body {
 .join-us-button {
   margin-top: 2rem;
   padding: 0.75rem 2rem;
-  background-color: #B0FFC2;
-  color: #1E4B4C;
+  background-color: #b0ffc2;
+  color: #1e4b4c;
   font-weight: 600;
   border-radius: 0.75rem;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
   transition: background-color 0.3s ease-in-out;
   display: flex;
   align-items: center;
@@ -296,9 +298,9 @@ body {
 }
 
 .teams-title {
-  font-size: 2.10rem;
+  font-size: 2.1rem;
   font-weight: 700;
-  color: #0E0F0C;
+  color: #0e0f0c;
   text-align: left;
   width: 500px;
 }
@@ -317,7 +319,7 @@ body {
   position: relative;
 }
 
-.title-aks{
+.title-aks {
   margin: 30px;
   font-weight: 400;
   font-size: 2.5rem;
@@ -336,7 +338,7 @@ body {
 .testimonial-card {
   flex: 0 0 330px;
   max-width: 90vw;
-  border-right: 1px solid #ABABAB;
+  border-right: 1px solid #ababab;
   padding: 24px;
   scroll-snap-align: start;
   display: flex;
@@ -358,19 +360,19 @@ body {
   scrollbar-width: none;
 }
 
-.commentor-aks{
+.commentor-aks {
   margin-top: auto;
   margin-bottom: auto;
 }
 
-.post-aks{
+.post-aks {
   margin-top: auto;
   margin-bottom: auto;
 }
 
 .ecosystem-section {
-  background: #004A3C;
-  color: #7AFFA1;
+  background: #004a3c;
+  color: #7affa1;
   padding: 32px 0 32px 0;
   margin: 48px 0;
 }
@@ -379,7 +381,7 @@ body {
   font-size: 2.5rem;
   font-weight: 500;
   text-align: left;
-  color: #7AFFA1;
+  color: #7affa1;
   margin: 3vw 10vw 8vw 10vw;
 }
 
@@ -405,7 +407,13 @@ body {
       white 80%,
       transparent
     );
-    mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+    mask: linear-gradient(
+      90deg,
+      transparent,
+      white 20%,
+      white 80%,
+      transparent
+    );
   }
 
   .scroller[data-animated="true"] .scroller__inner {
@@ -492,12 +500,9 @@ body {
   justify-content: center;
 }
 
-
-
 /* Responsive: show 1 card at a time on mobile */
 /* ========== TABLET & SMALL DESKTOP (769px and above) ========== */
 @media (min-width: 769px) {
-
   .hero-section {
     padding: 4rem 2rem;
     flex-direction: row;
@@ -677,7 +682,6 @@ body {
 
 /* ========== MOBILE (max-width: 480px) ========== */
 @media (max-width: 480px) {
-
   .hero-section {
     flex-direction: column-reverse;
     align-items: center;
@@ -707,7 +711,7 @@ body {
     left: 0%;
     z-index: 2;
   }
-  .i3{
+  .i3 {
     position: absolute;
     transform: none;
     top: 20%;
@@ -823,4 +827,3 @@ body {
     display: none;
   }
 }
-

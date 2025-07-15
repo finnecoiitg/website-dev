@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop';
 import Courses from './components/Courses';
 import Events from './components/Events';
+import Blogs from './components/Blogs';
 // import DiscoverPotential from './components/DiscoverPotential';
 // import About from './components/About';
 // import Faqs from './components/Faqs';
@@ -18,6 +19,7 @@ function App() {
       <Route path="/" element={<LandingPage />} />
       <Route path="/courses" element={<Courses />} />
       <Route path="/events" element={<Events />} />
+      <Route path="/blogs" element={<Blogs />} />
       {/* <Route path="/about" element={<About />} /> */}
       {/* <Route path="/faqs" element={<Faqs />} /> */}
       {/* <Route path="/contact" element={<Contact />} /> */}
