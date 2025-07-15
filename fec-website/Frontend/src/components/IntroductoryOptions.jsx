@@ -173,31 +173,27 @@ const IntroductoryOptions = () => {
           </div>
         </div>
         <section className="mentors-section">
-        <h2 className="mentors-heading">Meet your mentors</h2>
-
-        <div className="mentors-grid">
-          {Array(6)
-            .fill(0)
-            .map((_, index) => (
-              <div className="mentor-card" key={index}>
-                <img
-                  src={imag}
-                  alt="Mentor"
-                  className="mentor-image"
-                />
-                <div className="mentor-details">
-                  <h3>Europe Street beat</h3>
-                  <p>Designation</p>
-                  <Link className="linkedin-button" to="#">
-                    LinkedIn ↗
-                  </Link>
+          <h2 className="mentors-heading">Meet your mentors</h2>
+          <div className="mentors-grid">
+            {Array(6)
+              .fill(0)
+              .map((_, index) => (
+                <div className="mentor-card" key={index}>
+                  <img
+                    src={imag}
+                    alt="Mentor"
+                    className="mentor-image"
+                  />
+                  <div className="mentor-details">
+                    <h3>Europe Street beat</h3>
+                    <p>Designation</p>
+                    <Link className="linkedin-button" to="#">LinkedIn ↗</Link>
+                  </div>
                 </div>
-              </div>
-            ))}
-        </div>
+              ))}
+          </div>
+        </section>
       </section>
-      </section>
-
     </div>
   );
 };
