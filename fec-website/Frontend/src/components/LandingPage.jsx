@@ -4,6 +4,8 @@ import './LandingPage.css';
 import CountUp from 'react-countup';
 import coin4 from '../img/coin4.png';
 import Rotat2png from '../img/Rotat2png.png';
+import { useState } from 'react';
+import {API_BASE_URL} from '../apis'; // Importing the API base URL
 import VideoPlayer from '../img/VideoPlayer.png';
 import ProfilePic from '../img/ProfilePic.svg';
 import Yes3 from '../img/Yes3.png';
@@ -23,6 +25,34 @@ import DiscoverPotential from './DiscoverPotential';
 import ContactForm from './ContactForm'; 
 
 const LandingPage = () => {
+
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = async (e) => {
+    //e.preventDefault();
+    try {
+      const response = await fetch(`${API_BASE_URL}/api/msg/submit`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ name, email, message }),
+      });
+      const data = await response.json();
+
+      // alert('Message sent successfully!');
+      // setName('');
+      // setEmail('');
+      // setMessage('');
+
+    }
+    catch (error) {
+      console.log("Error submitting form:", error);
+    }
+  }
+
   useEffect(() => {
     const scrollers = document.querySelectorAll(".scroller");
 
@@ -46,6 +76,7 @@ const LandingPage = () => {
       });
     }
   }, []);
+
   return (
     <div className="landing-page-container">
       <Navbar />
@@ -269,6 +300,60 @@ const LandingPage = () => {
 
         {/* Contact Form Section */}
         <section className="contact-form-section">
+
+          <div className="contact-form-container">
+            <div className="contact-form-text-container">
+              <h2 className="contact-form-title">
+                Have a question or an idea to share with us? Drop us a line
+              </h2>
+            </div>
+            <div className="contact-form-fields-container">
+              <form className="contact-form" onSubmit={handleSubmit}>
+                <div>
+                  <label htmlFor="name" className="form-label">
+                    Name
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    className="form-input"
+                    placeholder="Your Name"
+                    onChange={(e) => setName(e.target.value)}
+                  />
+                </div>
+                <div>
+                  <label htmlFor="email" className="form-label">
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    className="form-input"
+                    placeholder="Your Email"
+                    onChange={(e) => setEmail(e.target.value)}
+                  />
+                </div>
+                <div>
+                  <label htmlFor="message" className="form-label">
+                    Message
+                  </label>
+                  <textarea
+                    id="message"
+                    rows="4"
+                    className="form-textarea"
+                    placeholder="Your Message"
+                    onChange={(e) => setMessage(e.target.value)}
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  className="submit-button"
+                >
+                  SUBMIT <span>→</span>
+                </button>
+              </form>
+            </div>
+
           <div className="imageNearBy">
             <img src={Yes3} alt="Yes" />
           </div>
