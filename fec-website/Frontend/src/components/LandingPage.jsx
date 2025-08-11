@@ -353,6 +353,7 @@ const LandingPage = () => {
                 </button>
               </form>
             </div>
+          </div>
 
           <div className="imageNearBy">
             <img src={Yes3} alt="Yes" />

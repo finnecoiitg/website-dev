@@ -47,7 +47,8 @@ export const submit = async (req, res) => {
                     <p>We appreciate your time and interest!</p>
 
                     <p>Warm regards,<br>
-                    <strong>Your Company/Team Name</strong><br>
+                    <strong>Finance and Economins club</strong><br>
+                    IIT Guwahati<br>
                     <a href="">yourwebsite.com</a> | 
                     <a href="">Instagram</a> | 
                     <a href="">Twitter</a>
