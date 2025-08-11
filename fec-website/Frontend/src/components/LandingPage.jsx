@@ -5,9 +5,39 @@ import Navbar from './Navbar';
 import CountUp from 'react-countup';
 import coin4 from '../img/coin4.png';
 import Rotat2png from '../img/Rotat2png.png';
+import { useState } from 'react';
+import {API_BASE_URL} from '../apis'; // Importing the API base URL
 
 
 const LandingPage = () => {
+
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = async (e) => {
+    //e.preventDefault();
+    try {
+      const response = await fetch(`${API_BASE_URL}/api/msg/submit`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ name, email, message }),
+      });
+      const data = await response.json();
+
+      // alert('Message sent successfully!');
+      // setName('');
+      // setEmail('');
+      // setMessage('');
+
+    }
+    catch (error) {
+      console.log("Error submitting form:", error);
+    }
+  }
+
   return (
     <div className="landing-page-container">
       <Navbar />
@@ -30,9 +60,9 @@ const LandingPage = () => {
             </div>
           </div>
           <div className="coin_images">
-            <div className="i1"><img src = {coin4} alt="" /></div>
-            <div className="i2"><img src = {coin4} alt="" /></div>
-            <div className="i3"><img src = {Rotat2png} alt="" /></div>
+            <div className="i1"><img src={coin4} alt="" /></div>
+            <div className="i2"><img src={coin4} alt="" /></div>
+            <div className="i3"><img src={Rotat2png} alt="" /></div>
           </div>
         </section>
 
@@ -82,7 +112,7 @@ const LandingPage = () => {
               <h2 className="join-network-title">
                 Join our expanding network with
               </h2>
-              <h4 style={{color: '#7AFFA1'}}>
+              <h4 style={{ color: '#7AFFA1' }}>
                 Exciting events, courses, workshops and more.
               </h4>
               <button className="join-us-button">
@@ -201,7 +231,7 @@ const LandingPage = () => {
               </h2>
             </div>
             <div className="contact-form-fields-container">
-              <form className="contact-form">
+              <form className="contact-form" onSubmit={handleSubmit}>
                 <div>
                   <label htmlFor="name" className="form-label">
                     Name
@@ -211,6 +241,7 @@ const LandingPage = () => {
                     id="name"
                     className="form-input"
                     placeholder="Your Name"
+                    onChange={(e) => setName(e.target.value)}
                   />
                 </div>
                 <div>
@@ -222,6 +253,7 @@ const LandingPage = () => {
                     id="email"
                     className="form-input"
                     placeholder="Your Email"
+                    onChange={(e) => setEmail(e.target.value)}
                   />
                 </div>
                 <div>
@@ -233,6 +265,7 @@ const LandingPage = () => {
                     rows="4"
                     className="form-textarea"
                     placeholder="Your Message"
+                    onChange={(e) => setMessage(e.target.value)}
                   ></textarea>
                 </div>
                 <button
